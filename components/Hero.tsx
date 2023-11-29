@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="">
         <div className="mb-7 lg:mb-14">
           <h1 className="font-bold text-3xl lg:text-6xl">
-            Hi 👋! I'm Elhoussaine
+            Hi 👋! I&apos;m Elhoussaine
           </h1>
           <h2 className="font-bold text-xl lg:text-3xl mb-4">
             Frontend developer ✨
@@ -22,7 +22,7 @@ export default function Hero() {
             New idea? New business?
           </h2>
           <h2 className="font-bold text-xl lg:text-3xl mb-4">
-            Let's connect!!
+            Let&apos;s connect!!
           </h2>
           <Link href="#contact">
             <Button className="" variant="default">
