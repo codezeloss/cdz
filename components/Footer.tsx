@@ -42,21 +42,34 @@ export default function Footer() {
           </div>
 
           <div className="dark:hidden items-center gap-x-4 md:gap-x-6 flex text-black">
-            <Link target="_blank" href={`${process.env.LINKEDIN}`}>
+            <Link
+              title="LinkedIn"
+              target="_blank"
+              href={`${process.env.LINKEDIN}`}
+            >
               <FaLinkedin size={24} />
             </Link>
-            <Link target="_blank" href={`${process.env.GITHUB}`}>
+            <Link title="GitHub" target="_blank" href={`${process.env.GITHUB}`}>
               <FaGithub size={24} />
             </Link>
-            <Link target="_blank" href={`${process.env.XTWITTER}`}>
+            <Link
+              title="Twitter"
+              target="_blank"
+              href={`${process.env.XTWITTER}`}
+            >
               <FaXTwitter size={24} />
             </Link>
             <ModeToggle />
           </div>
 
           <div className="dark:flex items-center gap-x-4 md:gap-x-6 hidden">
-            <Link target="_blank" href={`${process.env.LINKEDIN}`}>
+            <Link
+              title="LinkedIn"
+              target="_blank"
+              href={`${process.env.LINKEDIN}`}
+            >
               <Image
+                title="LinkedIn"
                 className="cursor-pointer"
                 src="/icons/icon-linkedin.svg"
                 alt="LinkedIn"
@@ -64,8 +77,9 @@ export default function Footer() {
                 height={24}
               />
             </Link>
-            <Link target="_blank" href={`${process.env.GITHUB}`}>
+            <Link title="GitHub" target="_blank" href={`${process.env.GITHUB}`}>
               <Image
+                title="GitHub"
                 className="cursor-pointer"
                 src="/icons/icon-github.svg"
                 alt="GitHub"
@@ -73,8 +87,13 @@ export default function Footer() {
                 height={24}
               />{" "}
             </Link>
-            <Link target="_blank" href={`${process.env.XTWITTER}`}>
+            <Link
+              title="Twitter"
+              target="_blank"
+              href={`${process.env.XTWITTER}`}
+            >
               <Image
+                title="Twitter"
                 className="cursor-pointer"
                 src="/icons/icon-twitter.svg"
                 alt="Twitter"

@@ -138,9 +138,9 @@ const ContactForm = () => {
         type="submit"
         disabled={!formIsValid}
         className={`
-          uppercase font-bold text-base pb-2.5 border-b-2 tracking-2 cursor-pointer ${
+          uppercase font-bold text-base pb-2.5 border-b-2 tracking-2 ${
             formIsValid
-              ? "hover:border-b-[#4EE1A0]"
+              ? "hover:border-b-[#4EE1A0] cursor-pointer"
               : "text-muted cursor-none border-b-muted"
           }
         `}

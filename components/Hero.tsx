@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col-reverse lg:flex-row items-center justify-between py-6 lg:py-24 xl:py-32">
+    <section className="w-full flex flex-col-reverse md:flex-row items-center justify-between py-2 sm:py-4 md:py-6 lg:py-24 xl:py-32">
       <div className="">
         <div className="mb-7 lg:mb-14">
           <h1 className="font-bold text-3xl lg:text-6xl">
@@ -13,7 +13,7 @@ export default function Hero() {
           <h2 className="font-bold text-xl lg:text-3xl mb-4">
             Frontend developer ✨
           </h2>
-          <h1 className="font-bold text-4xl lg:text-7xl text-[#4EE1A0]">
+          <h1 className="font-bold text-4xl lg:text-7xl text-[#2bc47f] dark:text-[#4EE1A0]">
             Working w/ Modern Web Technologies
           </h1>
         </div>
