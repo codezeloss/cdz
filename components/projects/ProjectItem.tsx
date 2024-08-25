@@ -20,10 +20,11 @@ const ProjectItem = ({ src, title, techs, preview, code }: Props) => {
     <div className="uppercase">
       <div className="object-cover relative w-full h-[280px] sm:h-[450px] md:h-[350px] lg:h-[400px] border-2 border-muted-foreground mb-5 hover:border-2 hover:border-[#4EE1A0]">
         <Image
-          className="absolute w-full h-full z-10"
+          className="absolute w-full h-auto z-10"
           src={src}
           alt="Project image"
           fill
+          loading="lazy"
         />
         <div className="hidden w-full h-full absolute bg-[#000]/[.75] lg:flex flex-col justify-center items-center gap-y-4 z-20 opacity-0 hover:opacity-100 3bp:hidden">
           <Link href={`${preview}`} target="_blank">

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import {Button} from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Hero() {
@@ -25,7 +25,7 @@ export default function Hero() {
             Let&apos;s connect!!
           </h2>
           <Link href="#contact">
-            <Button className="" variant="default">
+            <Button className="font-bold" variant="default">
               Contact Me
             </Button>
           </Link>
@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
 
       <Image
-        className="rounded-full text-sm border-4 border-black dark:border-white mb-14 lg:mb-0 w-[300px] h-[300px] md:w-[445px] md:h-[445px]"
+        className="hidden rounded-full text-sm border-4 border-black dark:border-white mb-14 lg:mb-0 w-[300px] h-[300px] md:w-[445px] md:h-[445px]"
         src="/images/main-picture.jpg"
         alt="Developer profile"
         width={445}

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import ProjectItem from "@/components/projects/ProjectItem";
 import { data } from "@/components/projects/data";
 

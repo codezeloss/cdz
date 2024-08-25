@@ -10,7 +10,7 @@ const techs = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
-    title: "React",
+    title: "React.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
@@ -30,8 +30,8 @@ const techs = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
   },
   {
-    title: "Tailwind",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    title: "TailwindCSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
     title: "Redux",
@@ -54,6 +54,10 @@ const techs = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
   {
+    title: "GitLab",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
+  },
+  {
     title: "Figma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
@@ -66,7 +70,7 @@ export default function TechStack() {
         Tech & Tools
       </h1>
 
-      <div className="grid gap-8 md:gap-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-x-24 xl:grid-cols-4">
+      <div className="grid gap-8 md:gap-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-x-24 xl:grid-cols-3 2xl:grid-cols-4">
         {techs.map((skill, index) => (
           <div key={index} className="flex items-center gap-x-4">
             <Image src={skill.icon} alt="Icon" width={28} height={28} />
