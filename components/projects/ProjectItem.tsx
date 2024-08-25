@@ -23,8 +23,8 @@ const ProjectItem = ({ src, title, techs, preview, code }: Props) => {
           className="absolute w-full h-auto z-10"
           src={src}
           alt="Project image"
+          loading="eager"
           fill
-          loading="lazy"
         />
         <div className="hidden w-full h-full absolute bg-[#000]/[.75] lg:flex flex-col justify-center items-center gap-y-4 z-20 opacity-0 hover:opacity-100 3bp:hidden">
           <Link href={`${preview}`} target="_blank">
