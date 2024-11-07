@@ -67,7 +67,7 @@ export default function TechStack() {
   return (
     <section id="skills" className="py-6 lg:py-11">
       <h1 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16">
-        Tech & Tools
+        Tech Stack & Tools
       </h1>
 
       <div className="grid gap-8 md:gap-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-x-24 xl:grid-cols-3 2xl:grid-cols-4">

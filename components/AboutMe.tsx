@@ -11,17 +11,18 @@ const AboutMe = () => {
           </h1>
 
             <p className="text-lg font-medium mb-6 lg:mb-16">
-                Passionate Frontend Developer specializing in React.js and NEXT.js, with a keen eye for converting
+                Frontend Developer specializing in React.js and NEXT.js, with a keen eye for converting
                 designs and ideas into seamless, responsive code. My expertise lies in crafting intuitive user
                 interfaces that prioritize usability, enjoyment, and accessibility.
                 <br/>
                 <br/>
                 With a robust skill set encompassing Redux Toolkit, RTK Query, Tailwind CSS, and popular UI libraries
-                like shadcn UI and Material UI, I excel at both building applications from the ground up and
+                like shadcn UI and Material UI, I excel at both building UIs and Fullstack web applications from the ground up as well as
                 contributing effectively to existing projects.
                 <br/>
                 <br/>
-                Committed to continuous learning and staying abreast of emerging technologies, I bring a blend of creativity and technical acumen to every project, ensuring optimal user experiences and efficient, scalable solutions.
+                Committed to continuous learning and staying abreast of emerging technologies, I bring a blend of creativity and technical acumen to every project,
+                ensuring optimal user experiences and efficient, scalable solutions.
             </p>
         </div>
 

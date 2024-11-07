@@ -17,9 +17,9 @@ export default function Home() {
       <Container>
         <div className="space-y-6 lg:space-y-11">
           <Hero />
+          <AboutMe />
           <TechStack />
           <Projects />
-          <AboutMe />
           <Contact />
         </div>
       </Container>

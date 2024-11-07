@@ -21,20 +21,20 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-x-6 font-semibold">
+          <Link
+              className="hover:text-[#4EE1A0] hover:font-bold"
+              href="#about-me"
+          >
+            About Me
+          </Link>
           <Link className="hover:text-[#4EE1A0] hover:font-bold" href="#skills">
-            Tech & Tools
+            Tech Stack
           </Link>
           <Link
             className="hover:text-[#4EE1A0] hover:font-bold"
             href="#projects"
           >
             Projects
-          </Link>
-          <Link
-            className="hover:text-[#4EE1A0] hover:font-bold"
-            href="#about-me"
-          >
-            About Me
           </Link>
           <Link
             className="hover:text-[#4EE1A0] hover:font-bold"
@@ -48,7 +48,7 @@ export default function Navbar() {
           <Link
             title="LinkedIn"
             target="_blank"
-            href={`${process.env.LINKEDIN}`}
+            href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
           >
             <Image
               title="LinkedIn"
@@ -59,7 +59,7 @@ export default function Navbar() {
               height={24}
             />
           </Link>
-          <Link title="GitHub" target="_blank" href={`${process.env.GITHUB}`}>
+          <Link title="GitHub" target="_blank" href={`${process.env.NEXT_PUBLIC_GITHUB}`}>
             <Image
               title="GitHub"
               className="cursor-pointer"
@@ -72,7 +72,7 @@ export default function Navbar() {
           <Link
             title="Twitter"
             target="_blank"
-            href={`${process.env.XTWITTER}`}
+            href={`${process.env.NEXT_PUBLIC_XTWITTER}`}
           >
             <Image
               title="Twitter"
@@ -90,17 +90,17 @@ export default function Navbar() {
           <Link
             title="LinkedIn"
             target="_blank"
-            href={`${process.env.LINKEDIN}`}
+            href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
           >
             <FaLinkedin size={24} />
           </Link>
-          <Link title="GitHub" target="_blank" href={`${process.env.GITHUB}`}>
+          <Link title="GitHub" target="_blank" href={`${process.env.NEXT_PUBLIC_GITHUB}`}>
             <FaGithub size={24} />
           </Link>
           <Link
             title="Twitter"
             target="_blank"
-            href={`${process.env.XTWITTER}`}
+            href={`${process.env.NEXT_PUBLIC_XTWITTER}`}
           >
             <FaXTwitter size={24} />
           </Link>
