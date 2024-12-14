@@ -11,7 +11,7 @@ const AboutMe = () => {
                     </h1>
 
                     <p className="text-lg font-medium mb-6 lg:mb-16">
-                        I'm Elhoussaine, a <span className="w-fit bg-muted rounded px-2 font-semibold">Frontend Developer</span> with
+                        I&apos;m Elhoussaine, a <span className="w-fit bg-muted rounded px-2 font-semibold">Frontend Developer</span> with
                         a proven track record of delivering high-quality web applications.
                         My expertise lies in transforming complex design requirements
                         into polished, responsive interfaces using React.js and Next.js.
