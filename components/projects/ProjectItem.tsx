@@ -39,7 +39,7 @@ const ProjectItem = ({ src, title, techs, preview, code }: Props) => {
       <div>
         <div>
           <p className="font-bold text-2xl">{title}</p>
-          <div className="font-semibold text-muted-foreground text-xs sm:text-sm flex gap-x-4">
+          <div className="font-semibold text-muted-foreground text-xs sm:text-sm flex flex-row items-center gap-x-4 gap-y-0.5 md:gap-y-0 flex-wrap">
             {techs.map((tech: string, index: number) => (
               <p key={index}>{tech}</p>
             ))}

@@ -26,10 +26,10 @@ export default function Hero() {
 
                 <div>
                     {/* Call to action text - balanced size */}
-                    <h2 className="font-bold text-lg md:text-xl">
+                    <h2 className="font-bold text-base lg:text-lg">
                         Ready to bring your vision to life?
                     </h2>
-                    <h2 className="font-bold text-lg md:text-xl mb-6">
+                    <h2 className="font-bold text-base lg:text-lg mb-4">
                         Let&apos;s create something amazing together!
                     </h2>
 
