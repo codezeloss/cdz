@@ -8,26 +8,34 @@ export default function Hero() {
             className="w-full h-full lg:h-[80vh] flex flex-col-reverse md:flex-row items-center justify-between py-6 sm:py-16 md:py-20 lg:py-28 xl:py-32">
             <div className="">
                 <div className="mb-7 lg:mb-14">
-                    <h1 className="font-bold text-3xl lg:text-6xl">
+                    {/* Main greeting - slightly smaller than main headline */}
+                    <h1 className="hidden font-bold text-4xl lg:text-5xl mb-3">
                         Hi 👋! I&apos;m Elhoussaine
                     </h1>
-                    <h2 className="font-bold text-xl md:text-3xl md:mt-1 mb-4">
-                        Frontend developer ✨
-                    </h2>
-                    <h1 className="font-bold text-4xl lg:text-7xl text-[#2bc47f] dark:text-[#4EE1A0]">
-                        Working w/ Modern Web Technologies
+
+                    {/* Main headline - largest text */}
+                    <h1 className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-emerald-500 to-teal-500 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent mb-4">
+                        Transforming Designs into Exceptional Web Experiences
                     </h1>
+
+                    {/* Professional title - smaller for better hierarchy */}
+                    <h2 className="font-bold text-xl md:text-2xl md:mt-1 mb-4">
+                        Frontend & Next.js Developer | React Expert | UI Specialist
+                    </h2>
                 </div>
+
                 <div>
-                    <h2 className="font-bold text-xl md:text-2xl">
-                        Have an idea? Existing or a New project?
+                    {/* Call to action text - balanced size */}
+                    <h2 className="font-bold text-lg md:text-xl">
+                        Ready to bring your vision to life?
                     </h2>
-                    <h2 className="font-bold text-xl md:text-2xl mb-4">
-                        Let&apos;s connect!!
+                    <h2 className="font-bold text-lg md:text-xl mb-6">
+                        Let&apos;s create something amazing together!
                     </h2>
+
                     <Link href="#contact">
-                        <Button className="font-bold" variant="default">
-                            Contact Me
+                        <Button className="font-bold text-base" variant="default">
+                            Get in Touch
                         </Button>
                     </Link>
                 </div>
