@@ -11,13 +11,13 @@ const AboutMe = () => {
                     </h1>
 
                     <p className="text-lg font-medium mb-6 lg:mb-16">
-                        I'm a <span className="w-fit bg-muted rounded px-2 font-semibold">Frontend Developer</span> with
+                        I&apos;m a <span className="w-fit bg-muted rounded px-2 font-semibold">Frontend Developer</span> with
                         a proven track record of delivering high-quality web applications.
                         My expertise lies in transforming complex design requirements
                         into polished, responsive interfaces using React.js and Next.js.
                         <br/>
                         <br/>
-                        In my professional journey, I've mastered the art of creating intuitive user experiences through
+                        In my professional journey, I&apos;ve mastered the art of creating intuitive user experiences through
                         modern technologies like Redux Toolkit, RTK Query, and Tailwind CSS. While frontend development
                         is my core strength, I also build <span className="w-fit bg-muted rounded px-2 font-semibold">full-stack applications</span> using
                         Next.js, leveraging its powerful
@@ -25,7 +25,7 @@ const AboutMe = () => {
                         <br/>
                         <br/>
                         What sets me apart is my dedication to pixel-perfect implementation and user-centric design.
-                        Whether it's crafting new features or optimizing existing ones, I ensure every project meets
+                        Whether it&apos;s crafting new features or optimizing existing ones, I ensure every project meets
                         the highest standards of performance, accessibility, and user satisfaction. I stay current with
                         emerging technologies and best practices, bringing innovative solutions to every challenge.
                     </p>
