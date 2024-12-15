@@ -1,62 +1,178 @@
 import Image from "next/image";
 import Link from "next/link";
+import {AppWindowMac, Github} from "lucide-react";
 
 interface Props {
-  src: string;
-  title: string;
-  techs: string[];
-  preview: string;
-  code: string;
+    src: string;
+    title: string;
+    techs: string[];
+    preview: string;
+    code: string;
+    description: string;
 }
 
-const btnClasses =
-  "uppercase font-bold text-base pb-2.5 border-b-2 border-b-[#4EE1A0] z-20 hover:text-[#4EE1A0]";
+const ProjectItem = ({ src, title, techs, preview, code, description }: Props) => {
+    return (
+        <div className="group relative rounded-xl overflow-hidden border transition-all duration-300
+            dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-emerald-500/50
+            bg-white/80 backdrop-blur-sm border-neutral-200 hover:border-emerald-500/50">
+            {/* Content Container */}
+            <div className="p-6 flex flex-col gap-4">
+                {/* Header */}
+                <div className="flex justify-between items-start">
+                    <h3 className="text-2xl font-bold dark:text-white text-neutral-900">{title}</h3>
+                    <div className="flex gap-2">
+                        {code && (
+                            <Link
+                                href={code}
+                                target="_blank"
+                                className="p-2 rounded-lg transition-colors group/link
+                                    dark:bg-neutral-800/50 dark:hover:bg-emerald-500/20
+                                    bg-neutral-100 hover:bg-emerald-500/10"
+                            >
+                                <Github
+                                    className="w-5 h-5 text-neutral-500 group-hover/link:text-emerald-600 transition-colors
+                                        dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+                                    strokeWidth={1.5}
+                                />
+                                <span className="sr-only">View Code</span>
+                            </Link>
+                        )}
+                        {preview && (
+                            <Link
+                                href={preview}
+                                target="_blank"
+                                className="p-2 rounded-lg transition-colors group/link
+                                    dark:bg-neutral-800/50 dark:hover:bg-emerald-500/20
+                                    bg-neutral-100 hover:bg-emerald-500/10"
+                            >
+                                <AppWindowMac
+                                    className="w-5 h-5 text-neutral-500 group-hover/link:text-emerald-600 transition-colors
+                                        dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+                                    strokeWidth={1.5}
+                                />
+                                <span className="sr-only">View Live Demo</span>
+                            </Link>
+                        )}
+                    </div>
+                </div>
 
-const btnClassesSm =
-  "uppercase font-bold text-base pb-2.5 border-b-2 border-b-[#4EE1A0] z-20 hover:text-[#4EE1A0]";
+                {/* Preview Image */}
+                <div className="mt-4 rounded-lg overflow-hidden">
+                    <div className="relative aspect-[16/9]">
+                        <Image
+                            src={src}
+                            alt={`${title} preview`}
+                            fill
+                            className="object-cover object-top hover:object-bottom transition-all duration-[3s] ease-in-out"
+                        />
+                    </div>
+                </div>
 
-const ProjectItem = ({ src, title, techs, preview, code }: Props) => {
-  return (
-    <div className="uppercase">
-      <div className="object-cover relative w-full h-[280px] sm:h-[450px] md:h-[350px] lg:h-[400px] border-2 border-muted-foreground mb-5 hover:border-2 hover:border-[#4EE1A0]">
-        <Image
-          className="absolute w-full h-auto z-10"
-          src={src}
-          alt="Project image"
-          loading="eager"
-          fill
-        />
-        <div className="hidden w-full h-full absolute bg-[#000]/[.75] lg:flex flex-col justify-center items-center gap-y-4 z-20 opacity-0 hover:opacity-100 3bp:hidden">
-          <Link href={`${preview}`} target="_blank">
-            <button className={`${btnClasses} text-white`}>View Project</button>
-          </Link>
-          <Link href={`${code}`} target="_blank">
-            <button className={`${btnClasses} text-white`}>View Code</button>
-          </Link>
+                {/* Description */}
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+                    {description}
+                </p>
+
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-2">
+                    {techs.map((tech, index) => (
+                        <span
+                            key={index}
+                            className="px-3 py-1 text-xs rounded-full text-neutral-600 bg-neutral-100
+                                dark:bg-neutral-800/50 dark:text-neutral-300"
+                        >
+                            {tech}
+                        </span>
+                    ))}
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div>
-        <div>
-          <p className="font-bold text-2xl">{title}</p>
-          <div className="font-semibold text-muted-foreground text-xs sm:text-sm flex flex-row items-center gap-x-4 gap-y-0.5 md:gap-y-0 flex-wrap">
-            {techs.map((tech: string, index: number) => (
-              <p key={index}>{tech}</p>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex lg:hidden gap-7 mt-5">
-          <Link href={`${preview}`} target="_blank">
-            <button className={btnClassesSm}>View Project</button>
-          </Link>
-          <Link href={`${code}`} target="_blank">
-            <button className={btnClassesSm}>View Code</button>
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default ProjectItem;
+
+
+// const ProjectItem = ({src, title, techs, preview, code, description}: Props) => {
+//     return (
+//         <div className="group relative rounded-xl overflow-hidden border transition-all duration-300
+//             dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-emerald-500/50
+//             bg-white/80 backdrop-blur-sm border-neutral-200 hover:border-emerald-500/50">
+//             <div className="p-6 flex flex-col lg:flex-row gap-6">
+//                 {/* Left Side - Image */}
+//                 <div className="lg:flex-1">
+//                     <div className="rounded-lg overflow-hidden border">
+//                         <Image
+//                             src={src}
+//                             alt={`${title} preview`}
+//                             width={600}
+//                             height={300}
+//                             className="w-full h-[200px] lg:h-[300px] object-cover object-top hover:object-bottom transition-all duration-[3s] ease-in-out"
+//                         />
+//                     </div>
+//                 </div>
+//
+//                 {/* Right Side - Content */}
+//                 <div className="lg:flex-1 flex flex-col gap-4">
+//                     {/* Header */}
+//                     <div className="flex justify-between items-start">
+//                         <h3 className="text-2xl font-bold dark:text-white text-neutral-900">{title}</h3>
+//                         <div className="flex gap-2">
+//                             {code && (
+//                                 <Link
+//                                     href={code}
+//                                     target="_blank"
+//                                     className="p-2 rounded-lg transition-colors group/link
+//                                         dark:bg-neutral-800/50 dark:hover:bg-emerald-500/20
+//                                         bg-neutral-100 hover:bg-emerald-500/10"
+//                                 >
+//                                     <Github
+//                                         className="w-5 h-5 text-neutral-500 group-hover/link:text-emerald-600 transition-colors
+//                                             dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+//                                         strokeWidth={1.5}
+//                                     />
+//                                     <span className="sr-only">View Code</span>
+//                                 </Link>
+//                             )}
+//                             {preview && (
+//                                 <Link
+//                                     href={preview}
+//                                     target="_blank"
+//                                     className="p-2 rounded-lg transition-colors group/link
+//                                         dark:bg-neutral-800/50 dark:hover:bg-emerald-500/20
+//                                         bg-neutral-100 hover:bg-emerald-500/10"
+//                                 >
+//                                     <AppWindowMac
+//                                         className="w-5 h-5 text-neutral-500 group-hover/link:text-emerald-600 transition-colors
+//                                             dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+//                                         strokeWidth={1.5}
+//                                     />
+//                                     <span className="sr-only">View Live Demo</span>
+//                                 </Link>
+//                             )}
+//                         </div>
+//                     </div>
+//
+//                     {/* Description */}
+//                     <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+//                         {description}
+//                     </p>
+//
+//                     {/* Technologies */}
+//                     <div className="flex flex-wrap gap-2 mt-auto">
+//                         {techs.map((tech, index) => (
+//                             <span
+//                                 key={index}
+//                                 className="px-3 py-1 text-xs rounded-full text-neutral-600 bg-neutral-100
+//                                     dark:bg-neutral-800/50 dark:text-neutral-300"
+//                             >
+//                                 {tech}
+//                             </span>
+//                         ))}
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };

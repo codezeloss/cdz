@@ -143,6 +143,22 @@ a {
     .animation-delay-4000 {
         animation-delay: 4s;
     }
+
+    @keyframes subtleFloat {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        50% {
+            transform: translate(10px, 10px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .animate-subtle-float {
+        animation: subtleFloat 20s ease infinite;
+    }
 }
 
 

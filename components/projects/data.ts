@@ -1,50 +1,47 @@
 export const data = [
-  {
-    id: 1,
-    image: "/images/jobeefy-preview.png",
-    title: "Jobeefy",
-    techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI", "Gemini API"],
-    live_url: "https://jobeefy.vercel.app",
-    code_url: "https://github.com/codezeloss/jobeefy",
-  },
-  {
-    id: 2,
-    image: "/images/booqnb-preview.png",
-    title: "booQnb",
-    techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
-    live_url: "https://booqnb.vercel.app",
-    code_url: "https://github.com/codezeloss/booQnb",
-  },
-  {
-    id: 3,
-    image: "/images/cipiux-preview.png",
-    title: "Cipiux",
-    techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
-    live_url: "https://cipiux.vercel.app",
-    code_url: "https://github.com/codezeloss/tiktek",
-  },
-  {
-    id: 4,
-    image: "/images/albatross-preview.png",
-    title: "albatross",
-    techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
-    live_url: "https://albatross-manager.vercel.app/",
-    code_url: "https://github.com/codezeloss/albatross",
-  },
-  {
-    id: 6,
-    image: "/images/photosnap-preview.jpg",
-    title: "Photosnap website",
-    techs: ["Typescript", "NEXT.js", "TailwindCSS"],
-    live_url: "https://photosnap-multi-page-website-n4xu.vercel.app/",
-    code_url: "https://github.com/codezeloss/photosnap-multi-page-website",
-  },
-  {
-    id: 5,
-    image: "/images/artgallery-preview.png",
-    title: "Art gallery website",
-    techs: ["HTML", "CSS", "SASS"],
-    live_url: "https://codezeloss.github.io/art-gallery-website/",
-    code_url: "https://github.com/codezeloss/art-gallery-website",
-  }
+    {
+        id: 1,
+        src: "/images/jobeefy-preview.png",
+        title: "Jobeefy",
+        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI", "Gemini API"],
+        preview: "https://jobeefy.vercel.app",
+        code: "https://github.com/codezeloss/jobeefy",
+        description: ""
+    },
+    {
+        id: 2,
+        src: "/images/booqnb-preview.png",
+        title: "booQnb",
+        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
+        preview: "https://booqnb.vercel.app",
+        code: "https://github.com/codezeloss/booQnb",
+        description: ""
+    },
+    {
+        id: 3,
+        src: "/images/cipiux-preview.png",
+        title: "Cipiux",
+        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
+        preview: "https://cipiux.vercel.app",
+        code: "https://github.com/codezeloss/tiktek",
+        description: ""
+    },
+    {
+        id: 4,
+        src: "/images/albatross-preview2.png",
+        title: "albatross",
+        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
+        preview: "https://albatross-manager.vercel.app/",
+        code: "https://github.com/codezeloss/albatross",
+        description: ""
+    },
+    {
+        id: 6,
+        src: "/images/photosnap-preview.jpg",
+        title: "Photosnap website",
+        techs: ["Typescript", "NEXT.js", "TailwindCSS"],
+        preview: "https://photosnap-multi-page-website-n4xu.vercel.app/",
+        code: "https://github.com/codezeloss/photosnap-multi-page-website",
+        description: ""
+    }
 ];

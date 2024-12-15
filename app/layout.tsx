@@ -89,34 +89,35 @@ export default function RootLayout({children}: { children: ReactNode }) {
             enableSystem
         >
             <div className="w-full h-full min-h-screen flex flex-col justify-between relative">
-                {/* Background gradients */}
+                {/* Background gradients and effects */}
                 <div className="fixed inset-0 -z-10">
                     {/* Light mode background */}
-                    <div className="absolute inset-0 bg-white dark:bg-neutral-900 transition-colors duration-300">
+                    <div
+                        className="absolute inset-0 bg-gradient-to-b from-white to-neutral-50 dark:from-neutral-900 dark:to-neutral-950 transition-colors duration-300">
+                        {/* Grid pattern */}
+                        <div
+                            className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] dark:bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)]"/>
+
                         {/* Light mode gradient orbs */}
                         <div
-                            className="absolute top-0 -left-4 w-72 h-72 bg-emerald-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-                        <div
-                            className="absolute top-0 -right-4 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-                        <div
-                            className="absolute -bottom-8 left-20 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-                    </div>
+                            className="absolute top-[-20%] left-0 right-0 h-[500px] rounded-full bg-gradient-to-r from-emerald-500/20 via-teal-500/20 to-emerald-500/20 blur-[100px] dark:from-emerald-500/10 dark:via-teal-500/10 dark:to-emerald-500/10"/>
 
-                    {/* Dark mode gradient orbs */}
-                    <div className="absolute inset-0 dark:opacity-100 opacity-0 transition-opacity duration-300">
+                        {/* Bottom accent */}
                         <div
-                            className="absolute top-0 -left-4 w-72 h-72 bg-emerald-900 rounded-full mix-blend-screen filter blur-xl opacity-50 animate-blob"></div>
+                            className="absolute bottom-0 left-0 right-0 h-[200px] bg-gradient-to-t from-emerald-50/50 to-transparent dark:from-emerald-950/50"/>
+
+                        {/* Additional subtle effects */}
                         <div
-                            className="absolute top-0 -right-4 w-72 h-72 bg-teal-900 rounded-full mix-blend-screen filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
-                        <div
-                            className="absolute -bottom-8 left-20 w-72 h-72 bg-emerald-800 rounded-full mix-blend-screen filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
+                            className="absolute inset-0 bg-gradient-to-tr from-transparent via-emerald-500/5 to-transparent dark:via-emerald-500/[0.03] blur-3xl"/>
                     </div>
                 </div>
 
                 {/* Content overlay */}
-                <div className="relative z-10 flex flex-col justify-between min-h-screen backdrop-blur-[2px]">
+                <div className="relative z-10 flex flex-col justify-between min-h-screen">
                     <Navbar/>
-                    {children}
+                    <main className="flex-grow">
+                        {children}
+                    </main>
                     <Footer/>
                 </div>
             </div>
