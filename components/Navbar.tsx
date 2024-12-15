@@ -23,7 +23,7 @@ export default function Navbar() {
           transition={{ duration: 0.3 }}
       >
         <Container>
-          <nav className="flex flex-col justify-center gap-y-4 md:gap-y-0 items-center md:flex-row md:justify-between w-full py-4 lg:py-5">
+          <nav className="flex flex-col justify-center gap-y-2 md:gap-y-0 items-center md:flex-row md:justify-between w-full py-4 lg:py-5">
             {/* Logo */}
             <motion.div
                 className="flex items-center gap-x-2.5"

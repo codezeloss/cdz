@@ -30,7 +30,7 @@ const AboutMe = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
                 <p>
-                    I&apos;m Elhoussaine, a <motion.span
+                    Hi 👋! I&apos;m Elhoussaine, a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}

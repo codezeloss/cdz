@@ -30,7 +30,7 @@ export default function Hero() {
 
     return (
         <section
-            className="w-full h-full lg:h-[80vh] flex flex-col-reverse md:flex-row items-center justify-between py-6 sm:py-16 md:py-20 lg:py-28 xl:py-32">
+            className="w-full h-full max-h-screen lg:h-[90vh] flex flex-col-reverse md:flex-row items-center justify-between py-11 sm:py-16 md:py-20 lg:py-28 xl:py-32">
             <motion.div
                 initial="hidden"
                 animate="visible"
@@ -42,7 +42,7 @@ export default function Hero() {
                         variants={itemVariants}
                         className="hidden font-bold text-4xl lg:text-5xl mb-3"
                     >
-                        Hi 👋! I&apos;m Elhoussaine
+                        Hi 👋! I&apos;m Elhoussaine, and I'm
                     </motion.h1>
 
                     <motion.h1
@@ -80,7 +80,7 @@ export default function Hero() {
                             >
                                 <motion.span
                                     className="absolute inset-0 bg-emerald-600 dark:bg-emerald-500"
-                                    initial={{ scale: 0, x: "-100%" }}
+                                    initial={{scale: 0, x: "-100%"}}
                                     variants={{
                                         hover: {
                                             scale: 1.5,
@@ -91,7 +91,7 @@ export default function Hero() {
                                             }
                                         }
                                     }}
-                                    style={{ originX: 0, originY: 0.5 }}
+                                    style={{originX: 0, originY: 0.5}}
                                 />
                                 <motion.span
                                     className="relative z-10 group-hover:text-white transition-colors duration-300"
