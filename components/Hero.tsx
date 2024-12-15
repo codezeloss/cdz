@@ -42,7 +42,7 @@ export default function Hero() {
                         variants={itemVariants}
                         className="hidden font-bold text-4xl lg:text-5xl mb-3"
                     >
-                        Hi 👋! I&apos;m Elhoussaine, and I'm
+                        Hi 👋! I&apos;m Elhoussaine, and I&apos;m
                     </motion.h1>
 
                     <motion.h1
