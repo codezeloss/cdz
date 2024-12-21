@@ -40,23 +40,17 @@ export default function Hero() {
                 <div className="mb-7 lg:mb-14">
                     <motion.h1
                         variants={itemVariants}
-                        className="hidden font-bold text-4xl lg:text-5xl mb-3"
-                    >
-                        Hi 👋! I&apos;m Elhoussaine, and I&apos;m
-                    </motion.h1>
-
-                    <motion.h1
-                        variants={itemVariants}
                         className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-emerald-500 to-teal-500 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent mb-4"
                     >
-                        Transforming Designs into Exceptional Web Experiences
+                        Building Modern Web Applications & Digital Solutions
                     </motion.h1>
 
                     <motion.h2
                         variants={itemVariants}
                         className="font-bold text-xl md:text-2xl md:mt-1 mb-4"
                     >
-                        Frontend & Next.js Developer | React Expert | UI Specialist
+                        Full-stack Next.js Developer | <span
+                        className="text-emerald-500 dark:text-emerald-400">✨</span> Frontend Specialist
                     </motion.h2>
                 </div>
 
@@ -124,3 +118,12 @@ export default function Hero() {
 //         height={445}
 //     />
 // </motion.div>
+
+// <motion.h1
+//     variants={itemVariants}
+//     className="hidden font-bold text-4xl lg:text-5xl mb-3"
+// >
+//     Hi 👋! I&apos;m Elhoussaine, and I&apos;m
+// </motion.h1>
+
+// Transforming Designs into Exceptional Web Experiences

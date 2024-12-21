@@ -30,32 +30,34 @@ const AboutMe = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
                 <p>
-                    Hi 👋! I&apos;m Elhoussaine, a <motion.span
+                    Hi! 👋 I&apos;m Elhoussaine, a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
-                >Frontend Developer</motion.span> with
-                    a proven track record of delivering high-quality web applications.
-                    My expertise lies in transforming complex design requirements
-                    into polished, responsive interfaces using React.js and Next.js.
+                >Frontend Developer</motion.span> who loves building websites and web applications. I specialize in React.js and Next.js,
+                    turning designs into smooth, responsive websites that people enjoy using.
                 </p>
 
                 <p>
-                    In my professional journey, I&apos;ve mastered the art of creating intuitive user experiences through
-                    modern technologies like Redux Toolkit, RTK Query, and Tailwind CSS. While frontend development
-                    is my core strength, I also build <motion.span
+                    What I do best is create beautiful user interfaces. I&apos;m really good at taking a design and bringing it to life
+                    exactly as envisioned, making sure it works perfectly on all devices. While I&apos;m mainly focused on frontend development,
+                    I also enjoy building <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
-                >full-stack applications</motion.span> using
-                    Next.js, leveraging its powerful features for end-to-end solutions.
+                >Full-Stack applications</motion.span> using Next.js when projects need both frontend and backend work.
                 </p>
 
                 <p>
-                    What sets me apart is my dedication to pixel-perfect implementation and user-centric design.
-                    Whether it&apos;s crafting new features or optimizing existing ones, I ensure every project meets
-                    the highest standards of performance, accessibility, and user satisfaction. I stay current with
-                    emerging technologies and best practices, bringing innovative solutions to every challenge.
+                    I&apos;ve worked with various companies and startups, helping them create great web experiences. I use modern tools
+                    like Redux Toolkit and Tailwind CSS to build efficient, user-friendly applications. What makes me different is my
+                    attention to detail and focus on quality – I believe that small details make a big difference in how people experience
+                    a website.
+                </p>
+
+                <p>
+                    I&apos;m passionate about learning and staying up-to-date with new technologies, always looking for better ways to solve
+                    problems and create amazing web experiences.
                 </p>
             </motion.div>
         </motion.section>
