@@ -57,7 +57,7 @@ export default function Error({
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.4 }}
               >
-                Don't worry, we're on it. In the meantime, you can:
+                Don&apos;t worry, we&apos;re on it. In the meantime, you can:
               </motion.p>
             </div>
 
