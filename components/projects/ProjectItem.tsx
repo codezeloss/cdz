@@ -11,7 +11,7 @@ interface Props {
     description: string;
 }
 
-const ProjectItem = ({ src, title, techs, preview, code, description }: Props) => {
+const ProjectItem = ({src, title, techs, preview, code, description}: Props) => {
     return (
         <div className="group relative rounded-xl overflow-hidden border transition-all duration-300
             dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-emerald-500/50
@@ -65,6 +65,8 @@ const ProjectItem = ({ src, title, techs, preview, code, description }: Props) =
                             alt={`${title} preview`}
                             fill
                             className="object-cover object-top hover:object-bottom transition-all duration-[3s] ease-in-out"
+                            loading="eager"
+                            quality={100}
                         />
                     </div>
                 </div>
