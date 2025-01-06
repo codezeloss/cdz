@@ -3,6 +3,10 @@ import Image from "next/image";
 export default function TechStack() {
     const techs = [
         {
+            title: "JavaScript",
+            icon: "/icons/JavaScript.svg"
+        },
+        {
             title: "TypeScript",
             icon: "/icons/TypeScript.svg"
         },
@@ -33,6 +37,10 @@ export default function TechStack() {
         {
             title: "React Query",
             icon: "/icons/react-query.svg"
+        },
+        {
+            title: "Bun.js",
+            icon: "/icons/bunjs.svg"
         },
         {
             title: "Claude AI",
