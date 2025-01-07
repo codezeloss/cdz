@@ -3,6 +3,8 @@
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 import {motion} from "framer-motion";
+import Link from "next/link";
+import {AppWindowMac, Github} from "lucide-react";
 
 interface Props {
     id: string;
@@ -19,7 +21,7 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
 
     return (
         <motion.div
-            onClick={() => router.push(`/${id}`)}
+            // onClick={() => router.push(`/${id}`)}
             className="group relative rounded-xl overflow-hidden border transition-all duration-300 cursor-pointer
                 dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-emerald-500/50
                 bg-white/80 backdrop-blur-sm border-neutral-200 hover:border-emerald-500/50"
@@ -29,6 +31,40 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
                 {/* Header */}
                 <div className="flex justify-between items-start">
                     <h3 className="text-2xl font-bold dark:text-white text-neutral-900">{title}</h3>
+                    <div className="flex gap-2">
+                        {code && (
+                            <Link
+                                href={code}
+                                target="_blank"
+                                className="p-2 rounded-lg transition-colors group/link
+                                    dark:bg-neutral-800/50 dark:hover:bg-emerald-500/20
+                                    bg-neutral-100 hover:bg-emerald-500/10"
+                            >
+                                <Github
+                                    className="w-5 h-5 text-neutral-500 group-hover/link:text-emerald-600 transition-colors
+                                        dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+                                    strokeWidth={1.5}
+                                />
+                                <span className="sr-only">View Code</span>
+                            </Link>
+                        )}
+                        {preview && (
+                            <Link
+                                href={preview}
+                                target="_blank"
+                                className="p-2 rounded-lg transition-colors group/link
+                                    dark:hover:bg-neutral-800/50 dark:bg-emerald-500/20
+                                    hover:bg-neutral-100 bg-emerald-500/10"
+                            >
+                                <AppWindowMac
+                                    className="w-5 h-5 group-hover/link:text-neutral-500 text-emerald-600 transition-colors
+                                        dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+                                    strokeWidth={1.5}
+                                />
+                                <span className="sr-only">View Live Demo</span>
+                            </Link>
+                        )}
+                    </div>
                 </div>
 
                 {/* Preview Image */}
