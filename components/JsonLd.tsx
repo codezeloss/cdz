@@ -2,7 +2,7 @@ export default function JsonLd() {
     const schema = [{
         "@context": "https://schema.org",
         "@type": "Person",
-        name: "Elhoussaine AIT AICHTE",
+        name: "codezeloss",
         jobTitle: "Frontend Developer",
         description: "Frontend Developer specializing in React.js and Next.js development",
         url: "https://codezeloss.vercel.app",
@@ -28,7 +28,7 @@ export default function JsonLd() {
         {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name: "Elhoussaine AIT AICHTE - Web Development Services",
+            name: "codezeloss - Web Development Services",
             description: "Professional web development services specializing in modern web applications",
             address: {
                 "@type": "PostalAddress",

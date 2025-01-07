@@ -11,7 +11,7 @@ import {motion} from "framer-motion";
 export default function Footer() {
     const navItems = [
         {href: "#about-me", label: "About Me"},
-        {href: "#skills", label: "Tech Stack"},
+        {href: "#skills", label: "Tech & Tools"},
         {href: "#projects", label: "Projects"},
         {href: "#contact", label: "Contact Me"},
     ];

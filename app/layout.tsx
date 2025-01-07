@@ -11,23 +11,23 @@ const spaceGrotesk = Space_Grotesk({subsets: ["latin"]});
 
 const languages = {
     en: {
-        title: "Elhoussaine AIT AICHTE | Frontend & Next.js Developer",
+        title: "codezeloss | Frontend & Next.js Developer",
         description: "Frontend Developer specializing in React.js and Next.js development. Expert in transforming designs into responsive, performant web applications.",
     },
     fr: {
-        title: "Elhoussaine AIT AICHTE | Développeur Frontend & Next.js",
+        title: "codezeloss | Développeur Frontend & Next.js",
         description: "Développeur Frontend spécialisé en React.js et Next.js. Expert en transformation de designs en applications web réactives et performantes.",
     },
     ar: {
-        title: "Elhoussaine AIT AICHTE | مطور Frontend & Next.js",
+        title: "codezeloss | مطور Frontend & Next.js",
         description: "مطور واجهة أمامية متخصص في React.js و Next.js. خبير في تحويل التصاميم إلى تطبيقات ويب سريعة الاستجابة وعالية الأداء.",
     }
 };
 
 export const metadata: Metadata = {
     title: {
-        template: '%s | Elhoussaine AIT AICHTE',
-        default: 'Elhoussaine AIT AICHTE | Frontend & Next.js Developer',
+        template: '%s | codezeloss',
+        default: 'codezeloss | Frontend & Next.js Developer',
     },
     description: "Frontend Developer specializing in React.js and Next.js development. Expert in transforming designs into responsive web applications.",
     keywords: [
@@ -55,21 +55,21 @@ export const metadata: Metadata = {
         alternateLocale: ['fr_FR', 'ar_MA'],
         type: "website",
         url: "https://codezeloss.vercel.app",
-        title: "Elhoussaine AIT AICHTE | Frontend & Next.js Developer",
+        title: "codezeloss | Frontend & Next.js Developer",
         description: "Frontend Developer specializing in React.js and Next.js development. Expert in transforming designs into responsive, performant web applications.",
-        siteName: "Elhoussaine AIT AICHTE Portfolio",
+        siteName: "codezeloss Portfolio",
         images: [
             {
                 url: "/og-image.png", // You'll need to create this
                 width: 1200,
                 height: 630,
-                alt: "Elhoussaine AIT AICHTE - Frontend Developer",
+                alt: "codezeloss - Frontend Developer",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Elhoussaine AIT AICHTE | Frontend & Next.js Developer",
+        title: "codezeloss | Frontend & Next.js Developer",
         description: "Frontend Developer specializing in React.js and Next.js development.",
         creator: "@codezeloss",
         images: ["/og-image.png"], // Same image as OG

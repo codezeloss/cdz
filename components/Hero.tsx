@@ -64,34 +64,12 @@ export default function Hero() {
 
                     <Link href="#contact">
                         <motion.div
-                            whileHover="hover"
-                            initial="initial"
-
                         >
                             <Button
-                                className="relative font-medium text-base px-6 py-2.5 overflow-hidden group"
+                                className="relative px-8 py-6 text-lg bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg transition-all duration-300"
                                 variant="default"
                             >
-                                <motion.span
-                                    className="absolute inset-0 bg-emerald-600 dark:bg-emerald-500"
-                                    initial={{scale: 0, x: "-100%"}}
-                                    variants={{
-                                        hover: {
-                                            scale: 1.5,
-                                            x: "0%",
-                                            transition: {
-                                                duration: 0.4,
-                                                ease: "easeOut"
-                                            }
-                                        }
-                                    }}
-                                    style={{originX: 0, originY: 0.5}}
-                                />
-                                <motion.span
-                                    className="relative z-10 group-hover:text-white transition-colors duration-300"
-                                >
-                                    Get in Touch
-                                </motion.span>
+                                Get in Touch
                             </Button>
                         </motion.div>
                     </Link>
