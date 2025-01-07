@@ -39,6 +39,10 @@ export default function TechStack() {
             icon: "/icons/react-query.svg"
         },
         {
+            title: "Bun.js",
+            icon: "/icons/bunjs.svg"
+        },
+        {
             title: "Claude AI",
             icon: "/icons/Claude-AI.svg"
         },
