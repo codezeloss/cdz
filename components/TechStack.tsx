@@ -55,7 +55,7 @@ export default function TechStack() {
     return (
         <section id="skills" className="py-6 lg:py-11">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16">
-                Tech & Tools
+                Techs & Tools
             </h1>
 
             <div className="flex items-center flex-wrap space-x-1 md:-space-x-2.5 md:-space-y-2">
@@ -165,7 +165,7 @@ export default function TechStack() {
 //                 animate={{opacity: 1, y: 0}}
 //                 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
 //             >
-//                 Tech & Tools
+//                 Techs & Tools
 //             </motion.h1>
 //
 //             <motion.div

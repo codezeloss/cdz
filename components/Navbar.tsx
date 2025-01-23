@@ -7,11 +7,13 @@ import Image from "next/image";
 import {FaGithub, FaLinkedin} from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
 import {motion} from "framer-motion";
+import {Terminal} from "lucide-react";
 
 export default function Navbar() {
     const navItems = [
         {href: "/#about-me", label: "About Me"},
-        {href: "/#skills", label: "Tech & Tools"},
+        {href: "/#services", label: "Services"},
+        {href: "/#skills", label: "Techs & Tools"},
         {href: "/#projects", label: "Projects"},
         {href: "/#contact", label: "Contact Me"},
     ];
@@ -27,17 +29,11 @@ export default function Navbar() {
                     className="flex flex-col justify-center gap-y-2 md:gap-y-0 items-center md:flex-row md:justify-between w-full py-4 lg:py-5">
                     {/* Logo */}
                     <motion.div
-                        className="flex items-center gap-x-2.5"
+                        className="flex items-center gap-x-2"
                         whileHover={{scale: 1.05}}
                         transition={{duration: 0.2}}
                     >
-                        <Image
-                            src="/cdz-icon.png"
-                            alt="codezeloss icon"
-                            width={35}
-                            height={35}
-                            className="rounded-lg"
-                        />
+                        <Terminal className='size-11 text-slate-500'/>
                         <Link href="/" className="font-extrabold text-2xl">codezeloss</Link>
                     </motion.div>
 
@@ -144,3 +140,11 @@ export default function Navbar() {
         </motion.header>
     );
 }
+
+{/*<Image*/}
+{/*    src="/cdz-icon.png"*/}
+{/*    alt="codezeloss icon"*/}
+{/*    width={35}*/}
+{/*    height={35}*/}
+{/*    className="rounded-lg"*/}
+{/*/>*/}

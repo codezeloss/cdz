@@ -23,8 +23,8 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
         <motion.div
             // onClick={() => router.push(`/${id}`)}
             className="group relative rounded-xl overflow-hidden border transition-all duration-300 cursor-pointer
-                dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-emerald-500/50
-                bg-white/80 backdrop-blur-sm border-neutral-200 hover:border-emerald-500/50"
+                dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-gray-500/50
+                bg-white/80 backdrop-blur-sm border-neutral-200 hover:border-gray-500/50"
             whileHover={{y: -5}}
         >
             <div className="p-6 flex flex-col gap-4">
@@ -37,12 +37,12 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
                                 href={code}
                                 target="_blank"
                                 className="p-2 rounded-lg transition-colors group/link
-                                    dark:bg-neutral-800/50 dark:hover:bg-emerald-500/20
-                                    bg-neutral-100 hover:bg-emerald-500/10"
+                                    dark:bg-neutral-800/50 dark:hover:bg-gray-500/20
+                                    bg-neutral-100 hover:bg-gray-500/10"
                             >
                                 <Github
-                                    className="w-5 h-5 text-neutral-500 group-hover/link:text-emerald-600 transition-colors
-                                        dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+                                    className="w-5 h-5 text-neutral-500 group-hover/link:text-gray-600 transition-colors
+                                        dark:text-neutral-400 dark:group-hover/link:text-gray-500"
                                     strokeWidth={1.5}
                                 />
                                 <span className="sr-only">View Code</span>
@@ -53,12 +53,12 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
                                 href={preview}
                                 target="_blank"
                                 className="p-2 rounded-lg transition-colors group/link
-                                    dark:hover:bg-neutral-800/50 dark:bg-emerald-500/20
-                                    hover:bg-neutral-100 bg-emerald-500/10"
+                                    dark:hover:bg-neutral-800/50 dark:bg-gray-500/20
+                                    hover:bg-neutral-100 bg-gray-500/10"
                             >
                                 <AppWindowMac
-                                    className="w-5 h-5 group-hover/link:text-neutral-500 text-emerald-600 transition-colors
-                                        dark:text-neutral-400 dark:group-hover/link:text-emerald-500"
+                                    className="w-5 h-5 group-hover/link:text-neutral-500 text-gray-600 transition-colors
+                                        dark:text-neutral-400 dark:group-hover/link:text-gray-500"
                                     strokeWidth={1.5}
                                 />
                                 <span className="sr-only">View Live Demo</span>

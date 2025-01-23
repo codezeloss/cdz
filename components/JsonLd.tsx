@@ -3,8 +3,8 @@ export default function JsonLd() {
         "@context": "https://schema.org",
         "@type": "Person",
         name: "codezeloss",
-        jobTitle: "Frontend Developer",
-        description: "Frontend Developer specializing in React.js and Next.js development",
+        jobTitle: "Full-Stack Developer",
+        description: "Full-Stack Developer specializing in React.js and Next.js development",
         url: "https://codezeloss.vercel.app",
         sameAs: [
             "https://github.com/codezeloss",
@@ -50,7 +50,7 @@ export default function JsonLd() {
             service: [
                 {
                     "@type": "Service",
-                    name: "Frontend Development",
+                    name: "Full-Stack Development",
                     description: "Modern web application development using React.js and Next.js"
                 },
                 {

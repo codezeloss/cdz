@@ -34,7 +34,7 @@ const AboutMe = () => {
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
-                >Frontend Developer</motion.span> who loves building websites and web applications. I specialize in React.js and Next.js,
+                >Full-Stack Next.js Developer</motion.span> who loves building websites and web applications. I specialize in React.js and Next.js,
                     turning designs into smooth, responsive websites that people enjoy using.
                 </p>
 

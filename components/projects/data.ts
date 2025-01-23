@@ -46,7 +46,7 @@ export const data = [
         title: "Cipiux",
         description: "",
         images: [
-            "/images/cipiux-preview.png"
+            "/images/cipiux-preview2.png"
         ],
         techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
         preview: "https://cipiux.vercel.app",
@@ -82,89 +82,90 @@ export const data = [
             "Optimizing performance",
             "Managing state across components"
         ]
-    },
-    {
-        id: "project-5",
-        title: "Photosnap website",
-        description: "",
-        images: [
-            "/images/photosnap-preview.jpg"
-        ],
-        techs: ["Typescript", "Next.js", "TailwindCSS"],
-        preview: "https://photosnap-multi-page-website-n4xu.vercel.app/",
-        code: "https://github.com/codezeloss",
-        features: [
-            "Responsive design",
-            "Dark mode support",
-            "Real-time updates"
-        ],
-        challenges: [
-            "Implementing complex animations",
-            "Optimizing performance",
-            "Managing state across components"
-        ]
-    },
-    {
-        id: "project-6",
-        title: "GitHub search app",
-        description: "",
-        images: [
-            "/images/githubsearch-preview.jpg",
-        ],
-        techs: ["Reactjs", "TailwindCSS", "API"],
-        preview: "https://aesthetic-maamoul-737009.netlify.app/",
-        code: "https://github.com/elosscode",
-        features: [
-            "Responsive design",
-            "Dark mode support",
-            "Real-time updates"
-        ],
-        challenges: [
-            "Implementing complex animations",
-            "Optimizing performance",
-            "Managing state across components"
-        ]
-    },
-    {
-        id: "project-7",
-        title: "Planets Facts website",
-        description: "",
-        images: [
-            "/images/planetsfacts-preview.jpg"
-        ],
-        techs: ["Typescript", "Next.js", "TailwindCSS"],
-        preview: "https://planets-fact-site-pi.vercel.app/",
-        code: "https://github.com/elosscode",
-        features: [
-            "Responsive design",
-            "Dark mode support",
-            "Real-time updates"
-        ],
-        challenges: [
-            "Implementing complex animations",
-            "Optimizing performance",
-            "Managing state across components"
-        ]
-    },
-    {
-        id: "project-8",
-        title: "Countries Search App",
-        description: "",
-        images: [
-            "/images/countries-preview.jpg"
-        ],
-        techs: ["Typescript", "Next.js", "TailwindCSS", "API"],
-        preview: "https://rest-countries-api-weld.vercel.app/",
-        code: "https://github.com/codezeloss",
-        features: [
-            "Responsive design",
-            "Dark mode support",
-            "Real-time updates"
-        ],
-        challenges: [
-            "Implementing complex animations",
-            "Optimizing performance",
-            "Managing state across components"
-        ]
     }
 ];
+
+// {
+//     id: "project-5",
+//         title: "Photosnap website",
+//     description: "",
+//     images: [
+//     "/images/photosnap-preview.jpg"
+// ],
+//     techs: ["Typescript", "Next.js", "TailwindCSS"],
+//     preview: "https://photosnap-multi-page-website-n4xu.vercel.app/",
+//     code: "https://github.com/codezeloss",
+//     features: [
+//     "Responsive design",
+//     "Dark mode support",
+//     "Real-time updates"
+// ],
+//     challenges: [
+//     "Implementing complex animations",
+//     "Optimizing performance",
+//     "Managing state across components"
+// ]
+// },
+// {
+//     id: "project-6",
+//         title: "GitHub search app",
+//     description: "",
+//     images: [
+//     "/images/githubsearch-preview.jpg",
+// ],
+//     techs: ["Reactjs", "TailwindCSS", "API"],
+//     preview: "https://aesthetic-maamoul-737009.netlify.app/",
+//     code: "https://github.com/elosscode",
+//     features: [
+//     "Responsive design",
+//     "Dark mode support",
+//     "Real-time updates"
+// ],
+//     challenges: [
+//     "Implementing complex animations",
+//     "Optimizing performance",
+//     "Managing state across components"
+// ]
+// },
+// {
+//     id: "project-7",
+//         title: "Planets Facts website",
+//     description: "",
+//     images: [
+//     "/images/planetsfacts-preview.jpg"
+// ],
+//     techs: ["Typescript", "Next.js", "TailwindCSS"],
+//     preview: "https://planets-fact-site-pi.vercel.app/",
+//     code: "https://github.com/elosscode",
+//     features: [
+//     "Responsive design",
+//     "Dark mode support",
+//     "Real-time updates"
+// ],
+//     challenges: [
+//     "Implementing complex animations",
+//     "Optimizing performance",
+//     "Managing state across components"
+// ]
+// },
+// {
+//     id: "project-8",
+//         title: "Countries Search App",
+//     description: "",
+//     images: [
+//     "/images/countries-preview.jpg"
+// ],
+//     techs: ["Typescript", "Next.js", "TailwindCSS", "API"],
+//     preview: "https://rest-countries-api-weld.vercel.app/",
+//     code: "https://github.com/codezeloss",
+//     features: [
+//     "Responsive design",
+//     "Dark mode support",
+//     "Real-time updates"
+// ],
+//     challenges: [
+//     "Implementing complex animations",
+//     "Optimizing performance",
+//     "Managing state across components"
+// ]
+// }
