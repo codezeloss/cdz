@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <motion.section
             id="about-me"
-            className="w-full py-6 lg:py-11"
+            className="w-full py-6 md:py-11 lg:py-20"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

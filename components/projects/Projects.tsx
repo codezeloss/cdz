@@ -24,7 +24,7 @@ export default function Projects() {
     };
 
     return (
-        <section id="projects" className="py-6 lg:py-11">
+        <section id="projects" className="py-6 md:py-11 lg:py-20">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-8 lg:mb-16">

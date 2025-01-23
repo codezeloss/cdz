@@ -2,7 +2,7 @@
 "use client"
 
 import {motion} from "framer-motion";
-import {Code, Dock, Layout, Rocket, Sparkles} from "lucide-react";
+import {Code, Dock, Layout, Rocket} from "lucide-react";
 
 const services = [
     {
@@ -33,8 +33,9 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="py-20">
+        <section className="py-6 md:py-11 lg:py-20">
             <motion.h2
+                id="services"
                 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}

@@ -53,7 +53,7 @@ export default function TechStack() {
     ];
 
     return (
-        <section id="skills" className="py-6 lg:py-11">
+        <section id="skills" className="py-6 md:py-11 lg:py-20">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16">
                 Techs & Tools
             </h1>
@@ -159,7 +159,7 @@ export default function TechStack() {
 //     };
 //
 //     return (
-//         <section id="skills" className="py-6 lg:py-11">
+//         <section id="skills" className="py-6 md:py-11 lg:py-20">
 //             <motion.h1
 //                 initial={{opacity: 0, y: 20}}
 //                 animate={{opacity: 1, y: 0}}
