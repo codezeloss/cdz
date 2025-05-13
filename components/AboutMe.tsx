@@ -30,7 +30,7 @@ const AboutMe = () => {
                 transition={{duration: 0.5, delay: 0.2}}
             >
                 <p>
-                    Hello! 👋 I'm Elhoussaine, a <motion.span
+                    Hello! 👋 I&apos;m Elhoussaine, a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{scale: 1.05}} transition={{duration: 0.2}}>Full-Stack Web Developer</motion.span> with
                     a strong focus on building production-ready digital solutions using the <strong>Next.js
@@ -56,12 +56,12 @@ const AboutMe = () => {
                 </p>
 
                 <p>
-                    Whether it's a sleek marketing site, a custom dashboard, or a full-stack SaaS MVP — I love building
+                    Whether it&apos;s a sleek marketing site, a custom dashboard, or a full-stack SaaS MVP — I love building
                     products that users enjoy and businesses rely on.
                 </p>
 
                 <p>
-                    Always learning, always building — I'm currently deepening my experience in <strong>AI integration
+                    Always learning, always building — I&apos;m currently deepening my experience in <strong>AI integration
                     and scalable architecture</strong> to stay ahead in the fast-evolving tech world.
                 </p>
 

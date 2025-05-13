@@ -63,7 +63,8 @@ export default function TechStack() {
                 transition={{duration: 0.5, delay: 0.1}}
                 className="text-base md:text-lg max-w-3xl mb-10 text-neutral-600 dark:text-neutral-300"
             >
-                I work across the full stack to design, build, and deploy modern web applications. Here's a look at the
+                I work across the full stack to design, build, and deploy modern web applications. Here&apos;s a look at
+                the
                 tools I use every day to turn ideas into robust digital products.
             </motion.p>
 
