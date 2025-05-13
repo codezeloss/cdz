@@ -53,12 +53,11 @@ export default function Contact() {
                         </Link>
                     </motion.div>
                 </div>
+                {/* Uncomment below if you want a contact form */}
+                {/* <div className="w-full ml-auto flex flex-col justify-end">
+                    <ContactForm />
+                </div> */}
             </div>
         </motion.footer>
     );
-}
-
-{/*<div className="w-full ml-auto flex flex-col justify-end">
-                <ContactForm/>
-              </div>*/
 }

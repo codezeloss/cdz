@@ -123,7 +123,7 @@ export default function RootLayout({children}: { children: ReactNode }) {
 
                 <div className="relative z-10 flex flex-col justify-between min-h-screen">
                     <Navbar/>
-                    <main className="flex-grow">
+                    <main className="flex-grow" aria-label="Main content">
                         {children}
                     </main>
                     <Footer/>

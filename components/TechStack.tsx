@@ -1,200 +1,111 @@
+"use client";
+
 import Image from "next/image";
+import {motion} from "framer-motion";
+
+const groupedTechs = [
+    {
+        label: "Core Stack",
+        techs: [
+            {title: "TypeScript", icon: "/icons/TypeScript.svg"},
+            {title: "React.js", icon: "/icons/reactjs.svg"},
+            {title: "Next.js", icon: "/icons/nextjs.svg"},
+        ],
+    },
+    {
+        label: "Styling & UI",
+        techs: [
+            {title: "Tailwind CSS", icon: "/icons/tailwindcss.svg"},
+            {title: "Shadcn UI", icon: "/icons/shadcnui.svg"},
+        ],
+    },
+    {
+        label: "State & Data",
+        techs: [
+            {title: "React Query", icon: "/icons/react-query.svg"},
+            {title: "Redux Toolkit", icon: "/icons/Redux.svg"},
+            {title: "Prisma", icon: "/icons/Prisma.svg"},
+        ],
+    },
+    {
+        label: "AI & Automation",
+        techs: [
+            {title: "Claude AI", icon: "/icons/Claude-AI.svg"},
+            {title: "ChatGPT", icon: "/icons/ChatGPT.svg"},
+        ],
+    },
+    {
+        label: "Runtime & Tools",
+        techs: [
+            {title: "JavaScript", icon: "/icons/JavaScript.svg"},
+            {title: "Bun.js", icon: "/icons/bunjs.svg"},
+        ],
+    },
+];
 
 export default function TechStack() {
-    const techs = [
-        {
-            title: "JavaScript",
-            icon: "/icons/JavaScript.svg"
-        },
-        {
-            title: "TypeScript",
-            icon: "/icons/TypeScript.svg"
-        },
-        {
-            title: "React.js",
-            icon: "/icons/reactjs.svg"
-        },
-        {
-            title: "NEXT.js",
-            icon: "/icons/nextjs.svg"
-        },
-        {
-            title: "Tailwind",
-            icon: "/icons/tailwindcss.svg"
-        },
-        {
-            title: "Redux Toolkit",
-            icon: "/icons/Redux.svg"
-        },
-        {
-            title: "Prisma",
-            icon: "/icons/Prisma.svg"
-        },
-        {
-            title: "Shadcn UI",
-            icon: "/icons/shadcnui.svg"
-        },
-        {
-            title: "React Query",
-            icon: "/icons/react-query.svg"
-        },
-        {
-            title: "Bun.js",
-            icon: "/icons/bunjs.svg"
-        },
-        {
-            title: "Claude AI",
-            icon: "/icons/Claude-AI.svg"
-        },
-        {
-            title: "ChatGPT",
-            icon: "/icons/ChatGPT.svg"
-        }
-    ];
-
     return (
         <section id="skills" className="py-6 md:py-11 lg:py-20">
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16">
+            <motion.h1
+                initial={{opacity: 0, y: 20}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{duration: 0.5}}
+                className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-10"
+            >
                 Techs & Tools
-            </h1>
+            </motion.h1>
 
-            <div className="flex items-center flex-wrap space-x-1 md:-space-x-2.5 md:-space-y-2">
-                {techs.map((skill, index) => (
-                    <div key={index}
-                         className="group relative w-[80px] h-[80px] md:w-[90px] md:h-[90px] lg:w-[100px] lg:h-[100px]">
-                        <Image
-                            className="absolute w-full h-full text-xs hover:transition hover:scale-105"
-                            src={skill.icon}
-                            alt={skill.title}
-                            fill
-                        />
-                        {/* Simple Tooltip */}
-                        <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100
-                            bg-white dark:bg-neutral-800 px-2 py-1 rounded text-xs
-                            border border-neutral-200 dark:border-neutral-700
-                            transition-opacity duration-200 whitespace-nowrap z-10">
-                            {skill.title}
+            <motion.p
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                viewport={{once: true}}
+                transition={{duration: 0.5, delay: 0.1}}
+                className="text-base md:text-lg max-w-3xl mb-10 text-neutral-600 dark:text-neutral-300"
+            >
+                I work across the full stack to design, build, and deploy modern web applications. Here's a look at the
+                tools I use every day to turn ideas into robust digital products.
+            </motion.p>
+
+            <div className="flex flex-wrap gap-4 md:gap-11">
+                {groupedTechs.map((group, idx) => (
+                    <motion.div
+                        key={idx}
+                        initial={{opacity: 0, y: 20}}
+                        whileInView={{opacity: 1, y: 0}}
+                        viewport={{once: true}}
+                        transition={{duration: 0.4, delay: idx * 0.1}}
+                        className="bg-neutral-100 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700
+                             rounded-xl p-4 flex flex-col shadow-sm
+                             hover:shadow-md transition-shadow duration-300"
+                    >
+                        <h2 className="text-xl font-semibold mb-5 text-neutral-800 dark:text-neutral-200">
+                            {group.label}
+                        </h2>
+                        <div className="flex flex-wrap gap-6">
+                            {group.techs.map((tech, index) => (
+                                <div
+                                    key={index}
+                                    className="group relative flex flex-col items-center w-20 sm:w-24"
+                                >
+                                    <div className="relative w-12 h-12 sm:w-14 sm:h-14">
+                                        <Image
+                                            src={tech.icon}
+                                            alt={tech.title}
+                                            fill
+                                            className="object-contain transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                    </div>
+                                    <span
+                                        className="mt-2 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 font-medium text-center">
+                    {tech.title}
+                  </span>
+                                </div>
+                            ))}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>
     );
 }
-
-{/*
-<h2 className="font-space-grotesk text-2xl lg:text-3xl xl:text-4xl tracking-[-1.5px] font-semibold"></h2>
-*/
-}
-
-//
-// import Image from "next/image";
-// import {motion} from "framer-motion";
-//
-// export default function TechStack() {
-//     const techs = [
-//         {
-//             title: "TypeScript",
-//             icon: "/icons/TypeScript.svg",
-//             color: "bg-blue-500/10 dark:bg-blue-500/20"
-//         },
-//         {
-//             title: "React.js",
-//             icon: "/icons/reactjs.svg",
-//             color: "bg-cyan-500/10 dark:bg-cyan-500/20"
-//         },
-//         {
-//             title: "NEXT.js",
-//             icon: "/icons/nextjs.svg",
-//             color: "bg-neutral-500/10 dark:bg-neutral-500/20"
-//         },
-//         {
-//             title: "Tailwind",
-//             icon: "/icons/tailwindcss.svg",
-//             color: "bg-sky-500/10 dark:bg-sky-500/20"
-//         },
-//         {
-//             title: "Redux Toolkit",
-//             icon: "/icons/Redux.svg",
-//             color: "bg-purple-500/10 dark:bg-purple-500/20"
-//         },
-//         {
-//             title: "Prisma",
-//             icon: "/icons/Prisma.svg",
-//             color: "bg-teal-500/10 dark:bg-teal-500/20"
-//         },
-//         {
-//             title: "Shadcn UI",
-//             icon: "/icons/shadcnui.svg",
-//             color: "bg-neutral-500/10 dark:bg-neutral-500/20"
-//         },
-//         {
-//             title: "React Query",
-//             icon: "/icons/react-query.svg",
-//             color: "bg-red-500/10 dark:bg-red-500/20"
-//         },
-//         {
-//             title: "Claude AI",
-//             icon: "/icons/Claude-AI.svg",
-//             color: "bg-emerald-500/10 dark:bg-emerald-500/20"
-//         },
-//         {
-//             title: "ChatGPT",
-//             icon: "/icons/ChatGPT.svg",
-//             color: "bg-green-500/10 dark:bg-green-500/20"
-//         }
-//     ];
-//
-//     const containerVariants = {
-//         hidden: {opacity: 0},
-//         visible: {
-//             opacity: 1,
-//             transition: {staggerChildren: 0.1}
-//         }
-//     };
-//
-//     const itemVariants = {
-//         hidden: {opacity: 0, y: 20},
-//         visible: {opacity: 1, y: 0}
-//     };
-//
-//     return (
-//         <section id="skills" className="py-6 md:py-11 lg:py-20">
-//             <motion.h1
-//                 initial={{opacity: 0, y: 20}}
-//                 animate={{opacity: 1, y: 0}}
-//                 className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
-//             >
-//                 Techs & Tools
-//             </motion.h1>
-//
-//             <motion.div
-//                 variants={containerVariants}
-//                 initial="hidden"
-//                 animate="visible"
-//                 className="flex flex-wrap gap-8 sm:gap-10 items-center"
-//             >
-//                 {techs.map((tech, index) => (
-//                     <motion.div
-//                         key={index}
-//                         variants={itemVariants}
-//                         whileHover={{y: -5}}
-//                         className="flex flex-col items-center"
-//                     >
-//                         <div className="relative w-[45px] h-[45px] sm:w-[50px] sm:h-[50px]">
-//                             <Image
-//                                 src={tech.icon}
-//                                 alt={tech.title}
-//                                 fill
-//                                 className="object-contain transition-transform duration-300 group-hover:scale-110"
-//                             />
-//                         </div>
-//                         <span className="mt-2 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 font-medium">
-//                             {tech.title}
-//                         </span>
-//                     </motion.div>
-//                 ))}
-//             </motion.div>
-//         </section>
-//     );
-// }

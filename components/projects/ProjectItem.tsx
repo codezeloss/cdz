@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import Image from "next/image";
 import {useRouter} from "next/navigation";
@@ -10,7 +10,7 @@ interface Props {
     id: string;
     src: string;
     title: string;
-    techs: string[];
+    techs: { title: string; icon: string }[]; // Update techs type to include icons
     preview: string;
     code: string;
     description: string;
@@ -25,7 +25,7 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
             className="group relative rounded-xl overflow-hidden border transition-all duration-300 cursor-pointer
                 dark:bg-neutral-900/40 dark:backdrop-blur-sm dark:border-neutral-800 dark:hover:border-gray-500/50
                 bg-white/80 backdrop-blur-sm border-neutral-200 hover:border-gray-500/50"
-            whileHover={{y: -5}}
+            whileHover={{y: -5, scale: 1.05}}  // Slight scale increase on hover for emphasis
         >
             <div className="p-6 flex flex-col gap-4">
                 {/* Header */}
@@ -81,21 +81,19 @@ const ProjectItem = ({id, src, title, techs, preview, code, description}: Props)
                     </div>
                 </div>
 
-                {/* Description */}
-                {/*<p className="text-neutral-600 dark:text-neutral-400 text-sm">*/}
-                {/*    {description}*/}
-                {/*</p>*/}
-
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                     {techs.map((tech, index) => (
-                        <span
-                            key={index}
-                            className="px-3 py-1 text-xs rounded-full text-neutral-600 bg-neutral-100
-                                dark:bg-neutral-800/50 dark:text-neutral-300"
-                        >
-                            {tech}
-                        </span>
+                        <div key={index} className="flex items-center gap-1 px-3 py-1 text-xs rounded-full text-neutral-600 bg-neutral-100
+                            dark:bg-neutral-800/50 dark:text-neutral-300">
+                            {/*    src={tech.icon} */}
+                            {/*    alt={`${tech.title} icon`}*/}
+                            {/*    width={16}*/}
+                            {/*    height={16}*/}
+                            {/*    className="w-4 h-4"*/}
+                            {/*/>*/}
+                            <span>{tech.title}</span>
+                        </div>
                     ))}
                 </div>
             </div>

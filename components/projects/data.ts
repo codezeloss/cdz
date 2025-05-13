@@ -6,7 +6,14 @@ export const data = [
         images: [
             "/images/jobeefy-preview.png",
         ],
-        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI", "Gemini API"],
+        techs: [
+            {title: "NEXT.js", icon: "/icons/nextjs.svg"},
+            {title: "TailwindCSS", icon: "/icons/tailwindcss.svg"},
+            {title: "Prisma ORM", icon: "/icons/prisma.svg"},
+            {title: "MongoDB", icon: "/icons/mongodb.svg"},
+            {title: "shadcnUI", icon: "/icons/shadcnui.svg"},
+            {title: "Gemini API", icon: "/icons/google.svg"},
+        ],
         preview: "https://jobeefy.vercel.app",
         code: "https://github.com/codezeloss/jobeefy",
         features: [
@@ -27,7 +34,13 @@ export const data = [
         images: [
             "/images/booqnb-preview.png"
         ],
-        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
+        techs: [
+            {title: "NEXT.js", icon: "/icons/nextjs.svg"},
+            {title: "TailwindCSS", icon: "/icons/tailwindcss.svg"},
+            {title: "Prisma ORM", icon: "/icons/prisma.svg"},
+            {title: "MongoDB", icon: "/icons/mongodb.svg"},
+            {title: "shadcnUI", icon: "/icons/shadcnui.svg"},
+        ],
         preview: "https://booqnb.vercel.app",
         code: "https://github.com/codezeloss/booQnb",
         features: [
@@ -46,9 +59,15 @@ export const data = [
         title: "Cipiux",
         description: "",
         images: [
-            "/images/cipiux-preview2.png"
+            "/images/cipiux-view2.png"
         ],
-        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
+        techs: [
+            {title: "NEXT.js", icon: "/icons/nextjs.svg"},
+            {title: "TailwindCSS", icon: "/icons/tailwindcss.svg"},
+            {title: "Prisma ORM", icon: "/icons/prisma.svg"},
+            {title: "MongoDB", icon: "/icons/mongodb.svg"},
+            {title: "shadcnUI", icon: "/icons/shadcnui.svg"},
+        ],
         preview: "https://cipiux.vercel.app",
         code: "https://github.com/codezeloss/tiktek",
         features: [
@@ -69,7 +88,13 @@ export const data = [
         images: [
             "/images/albatross-preview2.png"
         ],
-        techs: ["NEXT.js", "TailwindCSS", "Prisma ORM", "MongoDB", "shadcnUI"],
+        techs: [
+            {title: "NEXT.js", icon: "/icons/nextjs.svg"},
+            {title: "TailwindCSS", icon: "/icons/tailwindcss.svg"},
+            {title: "Prisma ORM", icon: "/icons/prisma.svg"},
+            {title: "MongoDB", icon: "/icons/mongodb.svg"},
+            {title: "shadcnUI", icon: "/icons/shadcnui.svg"},
+        ],
         preview: "https://albatross-manager.vercel.app/",
         code: "https://github.com/codezeloss/albatross",
         features: [
@@ -84,6 +109,7 @@ export const data = [
         ]
     }
 ];
+
 
 // {
 //     id: "project-5",

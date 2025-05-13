@@ -1,33 +1,50 @@
-// components/Services.tsx
 "use client"
 
 import {motion} from "framer-motion";
-import {Code, Dock, Layout, Rocket} from "lucide-react";
+import {Brain, Code, Dock, Layout, Plug, Rocket} from "lucide-react";
 
 const services = [
     {
         title: "Frontend Development",
-        description: "Building responsive, performant user interfaces with React and Next.js. Focus on clean code and pixel-perfect implementation.",
+        description:
+            "Building responsive and accessible user interfaces using React.js and Next.js. Focused on performance, interactivity, and pixel-perfect precision.",
         icon: Layout,
         color: "slate"
     },
     {
-        title: "Full-stack Development",
-        description: "End-to-end web applications using Next.js, combining frontend expertise with backend integration and database management.",
+        title: "Full-Stack Development",
+        description:
+            "Creating robust web applications using Next.js — combining frontend expertise with backend logic, API routes, and database integration.",
         icon: Code,
         color: "teal"
     },
     {
         title: "UI Implementation",
-        description: "Transforming designs into interactive, accessible interfaces with attention to detail and smooth animations.",
+        description:
+            "Turning designs into functional components using Tailwind CSS and Shadcn UI — with clean code and seamless animations.",
         icon: Dock,
         color: "cyan"
     },
     {
+        title: "API Integration",
+        description:
+            "Connecting and managing external APIs — from AI services to third-party platforms — to add powerful features to your application.",
+        icon: Plug,
+        color: "orange"
+    },
+    {
         title: "Performance Optimization",
-        description: "Optimizing web applications for speed, SEO, and user experience using modern best practices and tools.",
+        description:
+            "Improving speed, SEO, and overall user experience using modern best practices, analysis tools, and server/client optimizations.",
         icon: Rocket,
         color: "slate"
+    },
+    {
+        title: "AI-Powered Features",
+        description:
+            "Integrating AI-driven technologies such as NLP, image recognition, and machine learning into web applications to offer personalized, intelligent experiences.",
+        icon: Brain,
+        color: "pink"
     }
 ];
 
@@ -51,15 +68,14 @@ export default function Services() {
                         initial={{opacity: 0, y: 20}}
                         whileInView={{opacity: 1, y: 0}}
                         viewport={{once: true}}
-                        transition={{delay: index * 0.2}}
+                        transition={{delay: index * 0.15}}
                         className="group p-6 rounded-xl border border-neutral-200 dark:border-neutral-800
-                           bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm
-                           hover:border-slate-500/50 dark:hover:border-slate-500/50
-                           transition-all duration-300"
+                            bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm
+                            hover:border-slate-500/50 dark:hover:border-slate-500/50
+                            transition-all duration-300"
                     >
                         <service.icon
-                            className={`w-12 h-12 mb-4 text-${service.color}-500 transition-transform duration-300
-                               group-hover:scale-110`}
+                            className={`w-12 h-12 mb-4 text-${service.color}-500 transition-transform duration-300 group-hover:scale-110`}
                             strokeWidth={1.5}
                         />
                         <h3 className="text-xl font-bold mb-2">{service.title}</h3>
