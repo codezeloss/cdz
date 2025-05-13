@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Github, ExternalLink, Check } from "lucide-react";
+import {motion} from "framer-motion";
+import {ExternalLink, Github} from "lucide-react";
 import Link from "next/link";
 
 interface ProjectDetailsProps {
@@ -11,46 +11,46 @@ interface ProjectDetailsProps {
         title: string;
         description: string;
         images: string[];
-        techs: string[];
+        techs: { title: string; icon: string }[];
         preview: string;
         code: string;
         features?: string[];
     };
 }
 
-export default function ProjectDetails({ project }: ProjectDetailsProps) {
+export default function ProjectDetails({project}: ProjectDetailsProps) {
     return (
         <motion.div
             className="w-full py-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 0.5}}
         >
             {/* Header Section */}
             <div className="mb-12">
                 <motion.h1
                     className="text-4xl lg:text-5xl font-bold mb-4"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.2}}
                 >
                     {project.title}
                 </motion.h1>
 
                 <motion.p
                     className="text-lg text-neutral-600 dark:text-neutral-300 mb-6"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.3}}
                 >
                     {project.description}
                 </motion.p>
 
                 <motion.div
                     className="flex flex-wrap gap-2"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 }}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.4}}
                 >
                     {project.techs.map((tech, idx) => (
                         <span
@@ -60,7 +60,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                                 text-neutral-600 dark:text-neutral-300
                                 border border-neutral-200 dark:border-neutral-700"
                         >
-                            {tech}
+                            {tech.title}
                         </span>
                     ))}
                 </motion.div>
@@ -69,9 +69,9 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             {/* Image Gallery Grid */}
             <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{delay: 0.5}}
             >
                 {/* Main Large Image */}
                 <div className="md:col-span-2 relative aspect-video rounded-xl overflow-hidden">
@@ -128,9 +128,9 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
             {/* Call to Action */}
             <motion.div
                 className="flex gap-4 justify-start"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 }}
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{delay: 0.7}}
             >
                 {project.preview && (
                     <Link
@@ -140,7 +140,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                             bg-emerald-500 hover:bg-emerald-600
                             text-white font-medium transition-colors"
                     >
-                        <ExternalLink className="w-5 h-5" />
+                        <ExternalLink className="w-5 h-5"/>
                         View Live Demo
                     </Link>
                 )}
@@ -155,7 +155,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                             text-neutral-700 dark:text-neutral-200
                             font-medium transition-colors"
                     >
-                        <Github className="w-5 h-5" />
+                        <Github className="w-5 h-5"/>
                         View Code
                     </Link>
                 )}

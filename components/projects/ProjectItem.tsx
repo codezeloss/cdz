@@ -10,7 +10,7 @@ interface Props {
     id: string;
     src: string;
     title: string;
-    techs: { title: string; icon: string }[]; // Update techs type to include icons
+    techs: { title: string; icon: string }[];
     preview: string;
     code: string;
     description: string;
