@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: { children: ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
         <head>
             <JsonLd/>
         </head>
@@ -89,43 +89,55 @@ export default function RootLayout({children}: { children: ReactNode }) {
             enableSystem
         >
             <div className="w-full h-full min-h-screen flex flex-col justify-between relative">
+                {/* Professional background with subtle patterns */}
                 <div className="fixed inset-0 -z-10">
-                    <div
-                        className="absolute inset-0 bg-gradient-to-b from-white via-white to-neutral-50/50 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-950 transition-colors duration-300">
-                        {/* Grid */}
+                    {/* Base background */}
+                    <div className="absolute inset-0 bg-[#FAFAFA] dark:bg-[#121212] transition-colors duration-300">
+                        {/* Professional grid pattern */}
                         <div className="absolute inset-0
-                            bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)]
-                            bg-[size:64px_64px]
-                            dark:bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)]
-                            [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)]"
+                            bg-[linear-gradient(90deg,#00000008_1px,transparent_1px),linear-gradient(180deg,#00000008_1px,transparent_1px)]
+                            bg-[size:40px_40px]
+                            dark:bg-[linear-gradient(90deg,#ffffff08_1px,transparent_1px),linear-gradient(180deg,#ffffff08_1px,transparent_1px)]"
                         />
 
-                        {/* Gradient accents */}
-                        <div className="absolute top-[-20%] left-0 right-0 h-[500px] rounded-full
-                            bg-gradient-to-br from-neutral-500/10 via-slate-500/10 to-transparent
-                            dark:from-neutral-600/10 dark:via-slate-600/5 dark:to-transparent
-                            blur-[100px]"
+                        {/* Subtle dot pattern overlay */}
+                        <div className="absolute inset-0
+                            bg-[radial-gradient(#00000010_1px,transparent_1px)]
+                            bg-[size:20px_20px]
+                            dark:bg-[radial-gradient(#ffffff08_1px,transparent_1px)]
+                            opacity-70"
                         />
 
-                        {/* Bottom accent */}
-                        <div className="absolute bottom-0 left-0 right-0 h-[300px]
-                            bg-gradient-to-t from-neutral-50/50 via-neutral-50/25 to-transparent
-                            dark:from-neutral-950/50 dark:via-neutral-950/25 dark:to-transparent"
+                        {/* Top-right accent */}
+                        <div className="absolute top-0 right-0 w-[800px] h-[500px]
+                            bg-gradient-to-bl from-blue-500/[0.03] via-indigo-500/[0.02] to-transparent
+                            dark:from-blue-500/[0.02] dark:via-indigo-500/[0.01] dark:to-transparent
+                            blur-[80px]"
                         />
 
-                        {/* Subtle overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-tr
-                            from-transparent via-slate-500/[0.03] to-transparent
-                            dark:via-slate-500/[0.01] blur-3xl"
+                        {/* Bottom-left accent */}
+                        <div className="absolute bottom-0 left-0 w-[800px] h-[500px]
+                            bg-gradient-to-tr from-gray-500/[0.03] via-blue-500/[0.02] to-transparent
+                            dark:from-gray-500/[0.02] dark:via-blue-500/[0.01] dark:to-transparent
+                            blur-[80px]"
                         />
                     </div>
                 </div>
 
+                {/* Professional frosted glass effect for content */}
                 <div className="relative z-10 flex flex-col justify-between min-h-screen">
+                    {/* Navbar with subtle shadow */}
                     <Navbar/>
-                    <main className="flex-grow" aria-label="Main content">
+
+                    {/* Main content with professional spacing */}
+                    <main
+                        className="flex-grow w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8"
+                        aria-label="Main content"
+                    >
                         {children}
                     </main>
+
+                    {/* Footer with subtle top border */}
                     <Footer/>
                 </div>
             </div>
