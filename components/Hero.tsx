@@ -41,7 +41,7 @@ export default function Hero() {
                         variants={itemVariants}
                         className="font-bold text-xl md:text-2xl md:mt-1 mb-4 text-neutral-700 dark:text-neutral-300"
                     >
-                        Full-Stack Web Developer · React & NEXT.js Specialist · Product-Centric Builder
+                        🌐 Full-Stack Web Developer · ✨ React & NEXT.js Specialist · 🎯 Product-Centric Builder
                     </motion.p>
 
                     <motion.h1
