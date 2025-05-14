@@ -55,7 +55,7 @@ const groupedTechs = [
             {title: "Git", icon: "/icons/git.svg"},
             {title: "GitLab", icon: "/icons/GitLab.svg"},
             {title: "GitHub", icon: "/icons/GitHub-Light.svg"},
-            {title: "Postman", icon: "/icons/postman.svg"},
+            {title: "Postman", icon: "/icons/Postman.svg"},
             {title: "Figma", icon: "/icons/figma.svg"},
             {title: "ReSend", icon: "/icons/ReSend.svg"},
         ],
@@ -108,7 +108,7 @@ export default function TechStack() {
                                     key={index}
                                     className="group relative flex flex-col items-center w-20 sm:w-24"
                                 >
-                                    <div className="relative w-12 h-12 sm:w-14 sm:h-14">
+                                    <div className="relative w-7 h-7 sm:w-12 sm:h-12 md:w-14 md:h-14">
                                         <Image
                                             src={tech.icon}
                                             alt={tech.title}
@@ -118,8 +118,8 @@ export default function TechStack() {
                                     </div>
                                     <span
                                         className="mt-2 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 font-medium text-center">
-                    {tech.title}
-                  </span>
+                                        {tech.title}
+                                    </span>
                                 </div>
                             ))}
                         </div>

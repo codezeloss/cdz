@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className="mb-7 lg:mb-8">
                     <motion.p
                         variants={itemVariants}
-                        className="font-bold text-xl md:text-2xl md:mt-1 mb-4 text-neutral-700 dark:text-neutral-300"
+                        className="font-bold text-sm md:text-xl lg:text-2xl md:mt-1 mb-4 text-neutral-700 dark:text-neutral-300"
                     >
                         🌐 Full-Stack Web Developer · ✨ React & NEXT.js Specialist · 🎯 Product-Centric Builder
                     </motion.p>
@@ -53,12 +53,12 @@ export default function Hero() {
                 </div>
 
                 <motion.div variants={itemVariants}>
-                    <p className="font-medium text-base lg:text-lg text-neutral-600 dark:text-neutral-400">
+                    <p className="font-medium text-sm md:text-base lg:text-lg text-neutral-600 dark:text-neutral-400">
                         From clean UIs to full-stack SaaS platforms, I design and build modern, performant web
                         applications using the Next.js ecosystem — now with AI capabilities to take your product even
                         further.
                     </p>
-                    <p className="font-medium text-base lg:text-lg mt-8 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <p className="font-medium text-sm md:text-base lg:text-lg mt-8 mb-4 text-neutral-600 dark:text-neutral-400">
                         Let’s turn ideas into real, usable software — fast.
                     </p>
 
