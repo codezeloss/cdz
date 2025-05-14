@@ -7,6 +7,7 @@ const groupedTechs = [
     {
         label: "Core Stack",
         techs: [
+            {title: "JavaScript", icon: "/icons/JavaScript.svg"},
             {title: "TypeScript", icon: "/icons/TypeScript.svg"},
             {title: "React.js", icon: "/icons/reactjs.svg"},
             {title: "Next.js", icon: "/icons/nextjs.svg"},
@@ -17,6 +18,9 @@ const groupedTechs = [
         techs: [
             {title: "Tailwind CSS", icon: "/icons/tailwindcss.svg"},
             {title: "Shadcn UI", icon: "/icons/shadcnui.svg"},
+            {title: "Material UI", icon: "/icons/materialui.svg"},
+            {title: "Chakra UI", icon: "/icons/chakraui.svg"},
+            {title: "Radix UI", icon: "/icons/radixui.svg"},
         ],
     },
     {
@@ -25,20 +29,35 @@ const groupedTechs = [
             {title: "React Query", icon: "/icons/react-query.svg"},
             {title: "Redux Toolkit", icon: "/icons/Redux.svg"},
             {title: "Prisma", icon: "/icons/Prisma.svg"},
+            {title: "GraphQL", icon: "/icons/graphql.svg"},
+            {title: "Redis", icon: "/icons/redis.svg"},
+            {title: "Supabase", icon: "/icons/supabase.svg"},
+            {title: "MongoDB", icon: "/icons/MongoDB.svg"},
+            {title: "PostgreSQL", icon: "/icons/PostgreSQL.svg"},
+            {title: "Zod", icon: "/icons/Zod.svg"},
         ],
     },
     {
         label: "AI & Automation",
         techs: [
             {title: "Claude AI", icon: "/icons/Claude-AI.svg"},
-            {title: "ChatGPT", icon: "/icons/ChatGPT.svg"},
+            {title: "Open AI", icon: "/icons/ChatGPT.svg"},
+            {title: "DeepSeek", icon: "/icons/deepseek.svg"},
+            {title: "HuggingFace", icon: "/icons/hugging-face.svg"},
         ],
     },
     {
         label: "Runtime & Tools",
         techs: [
-            {title: "JavaScript", icon: "/icons/JavaScript.svg"},
+            {title: "Node.js", icon: "/icons/nodejs.svg"},
             {title: "Bun.js", icon: "/icons/bunjs.svg"},
+            {title: "NPM", icon: "/icons/npm-wordmark.svg"},
+            {title: "Git", icon: "/icons/git.svg"},
+            {title: "GitLab", icon: "/icons/GitLab.svg"},
+            {title: "GitHub", icon: "/icons/GitHub-Light.svg"},
+            {title: "Postman", icon: "/icons/postman.svg"},
+            {title: "Figma", icon: "/icons/figma.svg"},
+            {title: "ReSend", icon: "/icons/ReSend.svg"},
         ],
     },
 ];
@@ -68,7 +87,7 @@ export default function TechStack() {
                 tools I use every day to turn ideas into robust digital products.
             </motion.p>
 
-            <div className="flex flex-wrap gap-4 md:gap-11">
+            <div className="flex flex-wrap gap-2 sm:gap-4 md:gap-11">
                 {groupedTechs.map((group, idx) => (
                     <motion.div
                         key={idx}
