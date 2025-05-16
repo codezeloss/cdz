@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import {MdEmail} from "react-icons/md";
+import {FaLinkedin, FaXTwitter} from "react-icons/fa6";
 import {motion} from "framer-motion";
 
 export default function Contact() {
@@ -17,14 +18,15 @@ export default function Contact() {
             <div className="w-full flex flex-col justify-between lg:flex-row items-start gap-20 mb-11 lg:mb-24">
                 <div className="w-full mr-auto">
                     <motion.h1
-                        className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
+                        className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
                         initial={{opacity: 0, y: 20}}
                         whileInView={{opacity: 1, y: 0}}
                         viewport={{once: true}}
                         transition={{duration: 0.5}}
                     >
-                        Contact Me
+                        Get in Touch!
                     </motion.h1>
+
                     <motion.div
                         className="text-base md:text-lg space-y-4"
                         initial={{opacity: 0, y: 20}}
@@ -34,14 +36,47 @@ export default function Contact() {
                     >
                         <p className="text-neutral-600 dark:text-neutral-300">
                             I would love to hear about your project and discuss how I can help.
-                            You can reach me on LinkedIn or X,
+                            You can reach me on LinkedIn, X, or by email
                         </p>
+
+                        {/* LinkedIn */}
                         <Link
-                            className="inline-flex items-center gap-2 group"
+                            className="inline-flex items-center gap-2 group mr-4"
+                            href={`${process.env.NEXT_PUBLIC_LINKEDIN}`}
+                            target="_blank"
+                        >
+                            <motion.span
+                                className="w-fit bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-2 inline-flex items-center gap-2 transition-all duration-300 hover:bg-emerald-500/10"
+                                whileHover={{scale: 1.05}}
+                                whileTap={{scale: 0.95}}
+                            >
+                                <FaLinkedin className="size-4"/>
+                                <span className="font-medium">LinkedIn</span>
+                            </motion.span>
+                        </Link>
+
+                        {/* X (Twitter) */}
+                        <Link
+                            className="inline-flex items-center gap-2 group mr-4"
+                            href={`${process.env.NEXT_PUBLIC_XTWITTER}`}
+                            target="_blank"
+                        >
+                            <motion.span
+                                className="w-fit bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-2 inline-flex items-center gap-2 transition-all duration-300 hover:bg-emerald-500/10"
+                                whileHover={{scale: 1.05}}
+                                whileTap={{scale: 0.95}}
+                            >
+                                <FaXTwitter className="size-4"/>
+                                <span className="font-medium">X (Twitter)</span>
+                            </motion.span>
+                        </Link>
+
+                        {/* Email */}
+                        <Link
+                            className="inline-flex items-center gap-2 group mr-4"
                             href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}
                             target="_blank"
                         >
-                            <span>or email me at</span>
                             <motion.span
                                 className="w-fit bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-2 inline-flex items-center gap-2 transition-all duration-300 hover:bg-emerald-500/10"
                                 whileHover={{scale: 1.05}}
@@ -53,10 +88,6 @@ export default function Contact() {
                         </Link>
                     </motion.div>
                 </div>
-                {/* Uncomment below if you want a contact form */}
-                {/* <div className="w-full ml-auto flex flex-col justify-end">
-                    <ContactForm />
-                </div> */}
             </div>
         </motion.footer>
     );

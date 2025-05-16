@@ -30,18 +30,18 @@ export default function Projects() {
                 {/* Header */}
                 <div className="mb-8 lg:mb-16">
                     <motion.h1
-                        className="text-5xl lg:text-7xl font-bold mb-4"
+                        className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
                     >
-                        Projects
+                        Some of What I've Built
                     </motion.h1>
                 </div>
 
                 {/* Projects Grid */}
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8"
+                    className="flex flex-col gap-6" // grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
@@ -51,7 +51,7 @@ export default function Projects() {
                             key={project.id}
                             variants={projectVariants}
                         >
-                            <ProjectItem {...project} src={project?.images[0] || ''}/>
+                            <ProjectItem {...project} src={project?.images[0] || ''} isUnderConstruction/>
                         </motion.div>
                     ))}
                 </motion.div>

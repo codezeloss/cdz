@@ -30,13 +30,13 @@ export default function Hero() {
 
     return (
         <section
-            className="w-full h-full max-h-screen lg:h-[90vh] flex flex-col-reverse md:flex-row items-center justify-between py-11 sm:py-16 md:py-20 lg:py-28 xl:py-32">
+            className="w-full h-full max-h-screen lg:h-[90vh] flex flex-col-reverse md:flex-row items-center justify-between py-4 sm:py-16 md:py-20 lg:py-28 xl:py-32">
             <motion.div
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
             >
-                <div className="mb-7 lg:mb-8">
+                <div className="mb-4 md:mb-7 lg:mb-8">
                     <motion.p
                         variants={itemVariants}
                         className="font-bold text-sm md:text-xl lg:text-2xl md:mt-1 mb-4 text-neutral-700 dark:text-neutral-300"
@@ -46,27 +46,28 @@ export default function Hero() {
 
                     <motion.h1
                         variants={itemVariants}
-                        className="font-bold text-5xl lg:text-7xl bg-gradient-to-r from-neutral-950 via-neutral-800 to-neutral-900 dark:from-white dark:via-neutral-200 dark:to-neutral-300 bg-clip-text text-transparent mb-4"
+                        className="font-bold text-3xl md:text-5xl lg:text-7xl bg-gradient-to-r from-neutral-950 via-neutral-800 to-neutral-900 dark:from-white dark:via-neutral-200 dark:to-neutral-300 bg-clip-text text-transparent mb-4"
                     >
-                        Building Scalable Web Apps & Smart Digital Products
+                        Because Your App Deserves More Than a Template — It Deserves a Developer Who Cares
                     </motion.h1>
                 </div>
 
                 <motion.div variants={itemVariants}>
-                    <p className="font-medium text-sm md:text-base lg:text-lg text-neutral-600 dark:text-neutral-400">
-                        From clean UIs to full-stack SaaS platforms, I design and build modern, performant web
-                        applications using the Next.js ecosystem — now with AI capabilities to take your product even
-                        further.
+                    <p className="font-medium text-xs md:text-base lg:text-lg text-neutral-600 dark:text-neutral-400">
+                        From clean UIs to full-stack web apps and SaaS platforms, I design and build performant web
+                        applications using the modern NEXT.js ecosystem — now with AI capabilities to take your product
+                        even further.
                     </p>
-                    <p className="font-medium text-sm md:text-base lg:text-lg mt-8 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <p className="font-medium text-xs md:text-base lg:text-lg mt-4 lg:mt-8 mb-4 text-neutral-600 dark:text-neutral-400">
                         Let’s turn ideas into real, usable software — fast.
                     </p>
 
                     <Link href="#contact">
                         <motion.div>
                             <Button
-                                className="relative px-8 py-6 hover:font-bold text-lg bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-100 dark:text-neutral-900 shadow-lg hover:shadow-xl transition-all duration-300"
+                                className="relative px-4 py-3 lg:px-8 lg:py-6 hover:font-bold text-base lg:text-lg bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-100 dark:text-neutral-900 shadow-lg hover:shadow-xl transition-all duration-300"
                                 variant="default"
+                                size="sm"
                             >
                                 Get in Touch
                             </Button>

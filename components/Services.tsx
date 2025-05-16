@@ -53,12 +53,12 @@ export default function Services() {
         <section className="py-6 md:py-11 lg:py-20">
             <motion.h2
                 id="services"
-                className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
+                className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
             >
-                Services
+                What I Offer
             </motion.h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

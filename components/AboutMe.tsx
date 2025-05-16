@@ -13,13 +13,13 @@ const AboutMe = () => {
             transition={{duration: 0.5}}
         >
             <motion.h1
-                className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
+                className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 lg:mb-16"
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
                 transition={{duration: 0.5}}
             >
-                About Me
+                Behind the Code
             </motion.h1>
 
             <motion.div
@@ -33,12 +33,13 @@ const AboutMe = () => {
                     Hello! 👋 I&apos;m Elhoussaine, a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{scale: 1.05}} transition={{duration: 0.2}}>Full-Stack Web Developer</motion.span> with
-                    a strong focus on building production-ready digital solutions using the <strong>Next.js
+                    a strong focus on building production-ready digital solutions using the <strong>NEXT.js
                     ecosystem</strong>.
                 </p>
 
                 <p>
-                    I specialize in <strong>frontend development</strong> with React.js and Tailwind CSS, and I also handle
+                    I specialize in <strong>frontend development</strong> with React.js and Tailwind CSS, and I also
+                    handle
                     full-stack application development — from building intuitive interfaces to designing performant
                     backend APIs. My strength lies in turning ideas into fast, responsive, and reliable web apps.
                 </p>
@@ -50,18 +51,21 @@ const AboutMe = () => {
                 </p>
 
                 <p>
-                    I regularly use modern tools like <strong>Prisma ORM, PostgreSQL, React Query, Redux Toolkit, and AI-powered
-                    APIs</strong> to accelerate development and deliver value quickly. I also enjoy leveraging AI tools
+                    I regularly use modern tools like <strong>Prisma ORM, PostgreSQL, React Query, Redux Toolkit, and
+                    AI-powered
+                    APIs if needed</strong> to accelerate development and deliver value quickly. I also enjoy leveraging AI tools
                     during the development process to ship faster and smarter.
                 </p>
 
                 <p>
-                    Whether it&apos;s a sleek marketing site, a custom dashboard, or a full-stack SaaS MVP — I love building
+                    Whether it&apos;s a sleek marketing site, a custom dashboard, or a full-stack SaaS MVP — I love
+                    building
                     products that users enjoy and businesses rely on.
                 </p>
 
                 <p>
-                    Always learning, always building — I&apos;m currently deepening my experience in <strong>AI integration
+                    Always learning, always building — I&apos;m currently deepening my experience in <strong>AI
+                    integration
                     and scalable architecture</strong> to stay ahead in the fast-evolving tech world.
                 </p>
 

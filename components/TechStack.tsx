@@ -70,9 +70,9 @@ export default function TechStack() {
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
                 transition={{duration: 0.5}}
-                className="text-5xl lg:text-7xl font-bold mb-6 lg:mb-10"
+                className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 lg:mb-10"
             >
-                Techs & Tools
+                What I Work With
             </motion.h1>
 
             <motion.p
@@ -102,7 +102,7 @@ export default function TechStack() {
                         <h2 className="text-xl font-semibold mb-5 text-neutral-800 dark:text-neutral-200">
                             {group.label}
                         </h2>
-                        <div className="flex flex-wrap gap-6">
+                        <div className="flex flex-wrap gap-2 md:gap-4 lg:gap-6">
                             {group.techs.map((tech, index) => (
                                 <div
                                     key={index}
