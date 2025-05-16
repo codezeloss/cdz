@@ -1,7 +1,7 @@
 "use client"
 
 import {motion} from "framer-motion";
-import {Brain, Code, Dock, Layout, Plug, Rocket} from "lucide-react";
+import {Brain, Code, Dock, Layout, Paintbrush, Plug, Rocket} from "lucide-react";
 
 const services = [
     {
@@ -18,13 +18,13 @@ const services = [
         icon: Code,
         color: "teal"
     },
-    {
-        title: "UI Implementation",
-        description:
-            "Turning designs into functional components using Tailwind CSS and Shadcn UI — with clean code and seamless animations.",
-        icon: Dock,
-        color: "cyan"
-    },
+    // {
+    //     title: "UI Implementation",
+    //     description:
+    //         "Turning designs into functional components using Tailwind CSS and Shadcn UI — with clean code and seamless animations.",
+    //     icon: Dock,
+    //     color: "cyan"
+    // },
     {
         title: "API Integration",
         description:
@@ -39,13 +39,21 @@ const services = [
         icon: Rocket,
         color: "slate"
     },
-    {
-        title: "AI-Powered Features",
-        description:
-            "Integrating AI-driven technologies such as NLP, image recognition, and machine learning into web applications to offer personalized, intelligent experiences.",
-        icon: Brain,
-        color: "pink"
-    }
+    // {
+    //     title: "Design to Code",
+    //     description:
+    //         "Transforming Figma or design mockups into production-ready components with pixel precision and clean architecture.",
+    //     icon: Paintbrush, // Optional: You can replace this icon with something more relevant like `Paintbrush` or `LayoutDashboard`
+    //     color: "pink"
+    // }
+
+    // {
+    //     title: "AI-Powered Features",
+    //     description:
+    //         "Integrating AI-driven technologies such as NLP, image recognition, and machine learning into web applications to offer personalized, intelligent experiences.",
+    //     icon: Brain,
+    //     color: "pink"
+    // }
 ];
 
 export default function Services() {
