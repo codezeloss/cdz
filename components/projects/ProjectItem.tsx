@@ -112,7 +112,7 @@ const ProjectItem = ({
                                 alt={`${title} preview`}
                                 width={600}
                                 height={300}
-                                className="w-full h-[200px] lg:h-[250px] object-cover object-top hover:object-bottom transition-all duration-[3s] ease-in-out"
+                                className="w-full h-[250px] lg:h-[300px] object-cover object-top hover:object-bottom transition-all duration-[3s] ease-in-out"
                             />
                         </div>
                     </div>

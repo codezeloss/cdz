@@ -6,6 +6,7 @@ import {ThemeProvider} from "@/components/ui/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import Container from "@/components/ui/Container";
 
 const spaceGrotesk = Space_Grotesk({subsets: ["latin"]});
 
@@ -125,13 +126,13 @@ export default function RootLayout({children}: { children: ReactNode }) {
                 </div>
 
                 {/* Professional frosted glass effect for content */}
-                <div className="relative z-10 flex flex-col justify-between min-h-screen">
+                <Container>
                     {/* Navbar with subtle shadow */}
                     <Navbar/>
 
                     {/* Main content with professional spacing */}
                     <main
-                        className="flex-grow w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8"
+                        className="flex-grow w-full max-w-screen-xl"
                         aria-label="Main content"
                     >
                         {children}
@@ -139,7 +140,7 @@ export default function RootLayout({children}: { children: ReactNode }) {
 
                     {/* Footer with subtle top border */}
                     <Footer/>
-                </div>
+                </Container>
             </div>
         </ThemeProvider>
         </body>

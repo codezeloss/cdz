@@ -1,10 +1,10 @@
 "use client"
 
-import ProjectItem from "@/components/projects/ProjectItem";
-import {productionLiveProjectsData} from "@/components/projects/data";
 import {motion} from "framer-motion";
+import {freeTimeProjectsData} from "@/components/projects/data";
+import FreeTimeProjectItem from "@/components/projects/FreeTimeProjectItem";
 
-export default function Projects() {
+export default function FreeTimeProjects() {
     const containerVariants = {
         hidden: {opacity: 0},
         visible: {
@@ -25,7 +25,7 @@ export default function Projects() {
     };
 
     return (
-        <section id="projects" className="py-6 md:py-11 lg:py-20">
+        <section id="free-time-projects" className="py-6 md:py-11 lg:py-20">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-6 lg:mb-16">
@@ -35,7 +35,7 @@ export default function Projects() {
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
                     >
-                        Some of What I&apos;ve Built
+                        Free Time Projects
                     </motion.h1>
                     <motion.p
                         initial={{opacity: 0}}
@@ -44,24 +44,24 @@ export default function Projects() {
                         transition={{duration: 0.5, delay: 0.1}}
                         className="text-base md:text-lg max-w-3xl mb-10 text-neutral-600 dark:text-neutral-300"
                     >
-                        🚀 Live in Production
+                        🎨 Personal Sandbox
                     </motion.p>
                 </div>
 
 
                 {/* Projects Grid */}
                 <motion.div
-                    className="flex flex-col gap-6" // grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8"
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                 >
-                    {productionLiveProjectsData.map((project, index) => (
+                    {freeTimeProjectsData.map((project, index) => (
                         <motion.div
                             key={project.id}
                             variants={projectVariants}
                         >
-                            <ProjectItem {...project} src={project?.images[0] || ''} isUnderConstruction/>
+                            <FreeTimeProjectItem {...project} src={project?.images[0] || ''}/>
                         </motion.div>
                     ))}
                 </motion.div>

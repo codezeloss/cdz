@@ -1,7 +1,7 @@
 "use client"
 
 import {motion} from "framer-motion";
-import {Brain, Code, Dock, Layout, Paintbrush, Plug, Rocket} from "lucide-react";
+import {Brain, Code, Layout, Paintbrush, Plug, Rocket} from "lucide-react";
 
 const services = [
     {
@@ -39,21 +39,20 @@ const services = [
         icon: Rocket,
         color: "slate"
     },
-    // {
-    //     title: "Design to Code",
-    //     description:
-    //         "Transforming Figma or design mockups into production-ready components with pixel precision and clean architecture.",
-    //     icon: Paintbrush, // Optional: You can replace this icon with something more relevant like `Paintbrush` or `LayoutDashboard`
-    //     color: "pink"
-    // }
-
-    // {
-    //     title: "AI-Powered Features",
-    //     description:
-    //         "Integrating AI-driven technologies such as NLP, image recognition, and machine learning into web applications to offer personalized, intelligent experiences.",
-    //     icon: Brain,
-    //     color: "pink"
-    // }
+    {
+        title: "Design to Code",
+        description:
+            "Transforming Figma or design mockups into production-ready components with pixel precision and clean architecture.",
+        icon: Paintbrush,
+        color: "pink"
+    },
+    {
+        title: "AI Powered Features",
+        description:
+            "Integrating AI-driven technologies into web applications to offer personalized, intelligent experiences.",
+        icon: Brain,
+        color: "pink"
+    }
 ];
 
 export default function Services() {
@@ -69,7 +68,7 @@ export default function Services() {
                 What I Offer
             </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {services.map((service, index) => (
                     <motion.div
                         key={service.title}
