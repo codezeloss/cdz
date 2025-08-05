@@ -21,7 +21,7 @@ const services = [
     // {
     //     title: "UI Implementation",
     //     description:
-    //         "Turning designs into functional components using Tailwind CSS and Shadcn UI — with clean code and seamless animations.",
+    //         "Turning designs into functional components using modern styling technologies & tools — with clean code and seamless animations.",
     //     icon: Dock,
     //     color: "cyan"
     // },

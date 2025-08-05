@@ -19,7 +19,7 @@ const AboutMe = () => {
                 viewport={{once: true}}
                 transition={{duration: 0.5}}
             >
-                Behind the Code
+                Crafting Products, Not Just Writing Code
             </motion.h1>
 
             <motion.div
@@ -30,45 +30,36 @@ const AboutMe = () => {
                 transition={{duration: 0.5, delay: 0.2}}
             >
                 <p>
-                    Hello! 👋 I&apos;m Elhoussaine, a <motion.span
+                    Salam alaykoum 👋!! This is Elhoussaine ( the developer you're looking for (; )! I'm a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
-                    whileHover={{scale: 1.05}} transition={{duration: 0.2}}>Full-Stack Web Developer</motion.span> with
-                    a strong focus on building production-ready digital solutions using the <strong>NEXT.js
+                    whileHover={{scale: 1.05}} transition={{duration: 0.2}}>Full-Stack Web Developer & Product
+                    Builder</motion.span> focused on shipping production-ready digital solutions using the <strong>NEXT.js
                     ecosystem</strong>.
                 </p>
 
                 <p>
-                    I specialize in <strong>frontend development</strong> with React.js and Tailwind CSS, and I also
-                    handle
-                    full-stack application development — from building intuitive interfaces to designing performant
-                    backend APIs. My strength lies in turning ideas into fast, responsive, and reliable web apps.
+                    I specialize in <strong>Frontend development</strong> (React.js/Next.js + Tailwind CSS), and can
+                    take full responsibility as a Full-stack for bringing a product idea to life — from intuitive
+                    interfaces to performant backend APIs and deployment. I love turning problems into fast, reliable
+                    and elegant web apps.
                 </p>
 
                 <p>
-                    I’ve worked with startups and tech teams to deliver scalable solutions, including internal tools and
-                    early-stage SaaS platforms. I take pride in writing clean code, building accessible UI, and focusing
-                    on performance, UX, and real-world business impact.
+                    I’ve been building my own digital products — such as <strong>tadbeery.com</strong>, a Moroccan SaaS
+                    platform helping businesses digitalize inventory, sales, payments and day-to-day management — driven
+                    by a vision of empowering real-world businesses through technology.
                 </p>
 
                 <p>
-                    I regularly use modern tools like <strong>Prisma ORM, PostgreSQL, React Query, Redux Toolkit, and
-                    AI-powered
-                    APIs if needed</strong> to accelerate development and deliver value quickly. I also enjoy leveraging AI tools
-                    during the development process to ship faster and smarter.
+                    My current toolkit includes <strong>Prisma ORM, MongoDB/PostgreSQL, React Query, Redux Toolkit,
+                    Next-Auth, AWS</strong> and more. I constantly push myself to <strong>leverage AI tools and
+                    automation</strong> to build smarter and deliver real business impact.
                 </p>
 
                 <p>
-                    Whether it&apos;s a sleek marketing site, a custom dashboard, or a full-stack SaaS MVP — I love
-                    building
-                    products that users enjoy and businesses rely on.
+                    Whether it’s a sleek landing page, an internal dashboard, or a full-stack SaaS application — my goal
+                    is always the same: build something users enjoy and businesses can depend on.
                 </p>
-
-                <p>
-                    Always learning, always building — I&apos;m currently deepening my experience in <strong>AI
-                    integration
-                    and scalable architecture</strong> to stay ahead in the fast-evolving tech world.
-                </p>
-
             </motion.div>
         </motion.section>
     );

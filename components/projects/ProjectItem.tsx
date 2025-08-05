@@ -50,7 +50,7 @@ const ProjectItem = ({
                     {/* Left Side */}
                     <div className="lg:flex-[0.6] flex flex-col gap-6">
                         <div className="flex justify-between items-start">
-                            <h3 className="text-2xl font-bold dark:text-white text-neutral-900">{title}</h3>
+                            <h3 className="text-2xl font-bold dark:text-white text-neutral-900 mr-4">{title}</h3>
                             <div className="flex gap-2">
                                 {!isUnderConstruction && code && (
                                     <Link
@@ -105,14 +105,14 @@ const ProjectItem = ({
                     </div>
 
                     {/* Right Side - Image */}
-                    <div className="lg:flex-[0.4]">
+                    <div className="lg:flex-[0.5]">
                         <div className="rounded-lg overflow-hidden border h-full">
                             <Image
                                 src={src}
                                 alt={`${title} preview`}
                                 width={600}
                                 height={300}
-                                className="w-full h-[250px] lg:h-[300px] object-cover object-top hover:object-bottom transition-all duration-[3s] ease-in-out"
+                                className="w-full h-[250px] lg:h-full object-contain object-center hover:object-bottom transition-all duration-[3s] ease-in-out"
                             />
                         </div>
                     </div>

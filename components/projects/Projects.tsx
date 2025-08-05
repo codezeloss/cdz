@@ -35,7 +35,7 @@ export default function Projects() {
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
                     >
-                        Some of What I&apos;ve Built
+                        What I Build When I’m Not Coding for Others
                     </motion.h1>
                     <motion.p
                         initial={{opacity: 0}}
@@ -61,7 +61,8 @@ export default function Projects() {
                             key={project.id}
                             variants={projectVariants}
                         >
-                            <ProjectItem {...project} src={project?.images[0] || ''} isUnderConstruction/>
+                            <ProjectItem {...project} src={project?.images[0] || ''}
+                                         isUnderConstruction={project.id !== "project-1"}/>
                         </motion.div>
                     ))}
                 </motion.div>

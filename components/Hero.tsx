@@ -54,12 +54,12 @@ export default function Hero() {
 
                 <motion.div variants={itemVariants}>
                     <p className="font-medium text-xs md:text-base lg:text-lg text-neutral-600 dark:text-neutral-400">
-                        From clean UIs to full-stack web apps and SaaS platforms, I design and build performant web
-                        applications using the modern NEXT.js ecosystem — now with AI capabilities to take your product
-                        even further.
+                        From clean UIs to full-stack web apps, I build reliable web products using the
+                        modern Next.js ecosystem — blending solid engineering with product thinking and AI-driven
+                        tooling.
                     </p>
                     <p className="font-medium text-xs md:text-base lg:text-lg mt-4 lg:mt-8 mb-4 text-neutral-600 dark:text-neutral-400">
-                        Let’s turn ideas into real, usable software — fast.
+                        Ready to turn your vision into a real product? Let’s turn ideas into real, usable software — fast!
                     </p>
 
                     <Link href="#contact">

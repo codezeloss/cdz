@@ -35,9 +35,12 @@ export default function Contact() {
                         transition={{duration: 0.5, delay: 0.2}}
                     >
                         <p className="text-neutral-600 dark:text-neutral-300">
-                            I would love to hear about your project and discuss how I can help.
-                            You can reach me on LinkedIn, X, or by email
+                            Have an idea, SaaS, dashboard, or feature you want to bring to life?<br/> Let’s chat!! —
+                            worst
+                            case, we end up as friends on the internet!
                         </p>
+
+                        <h4 className="mt-6 font-semibold">Select your favorite way to interrupt me:</h4>
 
                         {/* LinkedIn */}
                         <Link

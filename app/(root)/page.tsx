@@ -1,4 +1,3 @@
-import Container from "@/components/ui/Container";
 import Hero from "@/components/Hero";
 import TechStack from "@/components/TechStack";
 import AboutMe from "@/components/AboutMe";
@@ -6,7 +5,6 @@ import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
 import type {Metadata} from "next";
 import Services from "@/components/Services";
-import FreeTimeProjects from "@/components/projects/FreeTimeProjects";
 
 export const metadata: Metadata = {
     title: "codezeloss | Full-Stack Developer",
@@ -16,15 +14,14 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <main>
-                <div className="space-y-6 lg:space-y-11">
-                    <Hero/>
-                    <AboutMe/>
-                    <Services/>
-                    <TechStack/>
-                    <Projects/>
-                    <FreeTimeProjects/>
-                    <Contact/>
-                </div>
+            <div className="space-y-6 lg:space-y-11">
+                <Hero/>
+                <AboutMe/>
+                <Services/>
+                <TechStack/>
+                <Projects/>
+                <Contact/>
+            </div>
         </main>
     );
 }
