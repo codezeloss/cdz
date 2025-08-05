@@ -30,7 +30,7 @@ const AboutMe = () => {
                 transition={{duration: 0.5, delay: 0.2}}
             >
                 <p>
-                    Salam alaykoum 👋!! This is Elhoussaine ( the developer you're looking for (; )! I'm a <motion.span
+                    Salam alaykoum 👋!! This is Elhoussaine ( the developer you're looking for (; )! I&apos;m a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{scale: 1.05}} transition={{duration: 0.2}}>Full-Stack Web Developer & Product
                     Builder</motion.span> focused on shipping production-ready digital solutions using the <strong>NEXT.js
@@ -45,7 +45,7 @@ const AboutMe = () => {
                 </p>
 
                 <p>
-                    I’ve been building my own digital products — such as <strong>tadbeery.com</strong>, a Moroccan SaaS
+                    I&apos;ve been building my own digital products — such as <strong>tadbeery.com</strong>, a Moroccan SaaS
                     platform helping businesses digitalize inventory, sales, payments and day-to-day management — driven
                     by a vision of empowering real-world businesses through technology.
                 </p>
@@ -57,7 +57,7 @@ const AboutMe = () => {
                 </p>
 
                 <p>
-                    Whether it’s a sleek landing page, an internal dashboard, or a full-stack SaaS application — my goal
+                    Whether it&apos;s a sleek landing page, an internal dashboard, or a full-stack SaaS application — my goal
                     is always the same: build something users enjoy and businesses can depend on.
                 </p>
             </motion.div>
