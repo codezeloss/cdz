@@ -40,7 +40,7 @@ export default function Contact() {
                             case, we end up as friends on the internet!
                         </p>
 
-                        <h4 className="mt-6 font-semibold">Select your favorite way to interrupt me:</h4>
+                        <h4 className="mt-6 font-semibold">Select your favorite way to interrupt me!</h4>
 
                         {/* LinkedIn */}
                         <Link
