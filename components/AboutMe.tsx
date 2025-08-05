@@ -30,7 +30,7 @@ const AboutMe = () => {
                 transition={{duration: 0.5, delay: 0.2}}
             >
                 <p>
-                    Salam alaykoum 👋!! This is Elhoussaine ( the developer you're looking for (; )! I&apos;m a <motion.span
+                    Salam alaykoum 👋!! This is Elhoussaine ( the developer you&apos;re looking for (; )! I&apos;m a <motion.span
                     className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-3 py-1 font-semibold text-neutral-900 dark:text-white"
                     whileHover={{scale: 1.05}} transition={{duration: 0.2}}>Full-Stack Web Developer & Product
                     Builder</motion.span> focused on shipping production-ready digital solutions using the <strong>NEXT.js
